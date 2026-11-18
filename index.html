@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML Content Extractor · SEO Page Analyzer</title>
+  <meta name="description" content="Paste pages' HTML and extract every piece of content: meta tags, schema, headings, body content, links and images, with SEO checks and cross-page comparison.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M11 10l-5 6 5 6M21 10l5 6-5 6' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="js/parser.js" defer></script>
+  <script src="js/bulk.js" defer></script>
+  <script src="js/prompts.js" defer></script>
+  <script src="js/sample.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap-wide topbar-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <div>
+          <div class="brand-name">HTML Content Extractor</div>
+          <div class="brand-sub">SEO &amp; content analysis from raw page HTML</div>
+        </div>
+      </div>
+      <div class="project-bar">
+        <label class="field inline project-field"><span>Project</span>
+          <select id="project-select" aria-label="Current project"></select></label>
+        <button type="button" class="btn sm" id="proj-new">New</button>
+        <button type="button" class="btn sm" id="proj-rename">Rename</button>
+        <button type="button" class="btn sm" id="proj-backup" title="Download the whole project (all pages) as one file">Backup</button>
+        <label class="btn sm" title="Restore a project backup file">Import<input type="file" id="proj-import" accept=".json,application/json" class="visually-hidden"></label>
+        <button type="button" class="btn sm danger-ghost" id="proj-delete">Delete</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="wrap-wide layout">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" aria-label="Pages in this project">
+      <div class="side-inner">
+        <button type="button" class="btn primary block" id="side-add">+ Add page</button>
+        <button type="button" class="side-item side-all" id="side-all" aria-current="false">
+          <span class="si-title">All pages · compare</span>
+          <span class="si-sub">Comparison, duplicates, similarity, link map</span>
+        </button>
+        <div class="side-head"><span>Pages</span><span class="muted small" id="page-count">0</span></div>
+        <label class="visually-hidden" for="page-filter">Filter pages</label>
+        <input type="search" id="page-filter" class="side-search" placeholder="Filter pages…">
+        <ol class="page-list" id="page-list"></ol>
+        <p class="side-note small muted" id="storage-note"></p>
+      </div>
+    </aside>
+
+    <main class="main-col">
+      <!-- ============ INPUT ============ -->
+      <section id="input-section" class="card input-card" aria-labelledby="input-title">
+        <div class="input-head">
+          <h1 id="input-title">Add a page</h1>
+          <p class="hint">In Chrome: open the page → <b>right-click → Inspect</b> → right-click the <code>&lt;html&gt;</code> tag → <b>Copy → Copy element</b>, then paste here. Add as many pages as you like; each one is saved in this project.</p>
+        </div>
+
+        <div class="input-row">
+          <label class="field url-field">
+            <span>Page URL <small>(recommended: needed for the internal link map and internal/external detection)</small></span>
+            <input type="url" id="page-url" placeholder="https://example.com/page/" inputmode="url">
+          </label>
+        </div>
+
+        <div class="drop" id="drop">
+          <label for="html-input" class="visually-hidden">Page HTML</label>
+          <textarea id="html-input" spellcheck="false" autocomplete="off" placeholder="&lt;html lang=&quot;en&quot;&gt;&#10;  &lt;head&gt; … &lt;/head&gt;&#10;  &lt;body&gt; … &lt;/body&gt;&#10;&lt;/html&gt;"></textarea>
+          <div class="drop-overlay" aria-hidden="true">Drop the .html file to load it</div>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="btn primary" id="analyze-btn">Add &amp; open page <kbd>Ctrl + Enter</kbd></button>
+          <button type="button" class="btn" id="add-next-btn" title="Save this page and clear the form for the next one">Add &amp; paste next <kbd>Ctrl + Shift + Enter</kbd></button>
+          <label class="btn ghost">Open .html file<input type="file" id="file-input" accept=".html,.htm,.txt,text/html" class="visually-hidden"></label>
+          <button type="button" class="btn ghost" id="sample-btn">Load sample pages</button>
+          <button type="button" class="btn ghost" id="clear-btn">Clear</button>
+          <button type="button" class="btn ghost" id="cancel-edit-btn" hidden>Cancel</button>
+          <span id="input-size" class="muted small" aria-live="polite"></span>
+        </div>
+        <p id="input-error" class="error-msg" role="alert" hidden></p>
+      </section>
+
+      <!-- ============ PAGE SUMMARY BAR ============ -->
+      <section id="summary-bar" class="card summary-bar" hidden>
+        <div class="sb-main">
+          <div class="sb-title" id="sb-title" dir="auto"></div>
+          <div class="sb-meta muted small" id="sb-meta"></div>
+        </div>
+        <div class="sb-actions">
+          <button type="button" class="btn sm" id="prev-btn" aria-label="Previous page">←</button>
+          <span class="muted small" id="pos-label"></span>
+          <button type="button" class="btn sm" id="next-btn" aria-label="Next page">→</button>
+          <button type="button" class="btn sm" id="edit-btn">Replace HTML</button>
+          <button type="button" class="btn sm danger-ghost" id="remove-btn">Remove page</button>
+        </div>
+      </section>
+
+      <!-- ============ PAGE REPORT ============ -->
+      <section id="report" hidden>
+        <div class="tabs-sticky">
+          <div class="tablist" role="tablist" aria-label="Page report sections" id="tablist">
+            <button type="button" role="tab" id="tab-overview" aria-selected="true" tabindex="0">Overview <span class="tcount" id="tc-overview"></span></button>
+            <button type="button" role="tab" id="tab-meta" aria-selected="false" tabindex="-1">Meta &amp; Head</button>
+            <button type="button" role="tab" id="tab-schema" aria-selected="false" tabindex="-1">Schema <span class="tcount" id="tc-schema"></span></button>
+            <button type="button" role="tab" id="tab-headings" aria-selected="false" tabindex="-1">Headings <span class="tcount" id="tc-headings"></span></button>
+            <button type="button" role="tab" id="tab-content" aria-selected="false" tabindex="-1">Content <span class="tcount" id="tc-content"></span></button>
+            <button type="button" role="tab" id="tab-links" aria-selected="false" tabindex="-1">Links <span class="tcount" id="tc-links"></span></button>
+            <button type="button" role="tab" id="tab-images" aria-selected="false" tabindex="-1">Images <span class="tcount" id="tc-images"></span></button>
+            <button type="button" role="tab" id="tab-keywords" aria-selected="false" tabindex="-1">Keywords</button>
+            <button type="button" role="tab" id="tab-technical" aria-selected="false" tabindex="-1">Technical</button>
+            <button type="button" role="tab" id="tab-aiprompt" aria-selected="false" tabindex="-1">AI prompt</button>
+            <button type="button" role="tab" id="tab-export" aria-selected="false" tabindex="-1">Export</button>
+          </div>
+        </div>
+        <div class="panels">
+          <div role="tabpanel" id="panel-overview" aria-labelledby="tab-overview"><div class="panel-inner" id="pi-overview"></div></div>
+          <div role="tabpanel" id="panel-meta" aria-labelledby="tab-meta" hidden="until-found"><div class="panel-inner" id="pi-meta"></div></div>
+          <div role="tabpanel" id="panel-schema" aria-labelledby="tab-schema" hidden="until-found"><div class="panel-inner" id="pi-schema"></div></div>
+          <div role="tabpanel" id="panel-headings" aria-labelledby="tab-headings" hidden="until-found"><div class="panel-inner" id="pi-headings"></div></div>
+          <div role="tabpanel" id="panel-content" aria-labelledby="tab-content" hidden="until-found"><div class="panel-inner" id="pi-content"></div></div>
+          <div role="tabpanel" id="panel-links" aria-labelledby="tab-links" hidden="until-found"><div class="panel-inner" id="pi-links"></div></div>
+          <div role="tabpanel" id="panel-images" aria-labelledby="tab-images" hidden="until-found"><div class="panel-inner" id="pi-images"></div></div>
+          <div role="tabpanel" id="panel-keywords" aria-labelledby="tab-keywords" hidden="until-found"><div class="panel-inner" id="pi-keywords"></div></div>
+          <div role="tabpanel" id="panel-technical" aria-labelledby="tab-technical" hidden="until-found"><div class="panel-inner" id="pi-technical"></div></div>
+          <div role="tabpanel" id="panel-aiprompt" aria-labelledby="tab-aiprompt" hidden="until-found"><div class="panel-inner" id="pi-aiprompt"></div></div>
+          <div role="tabpanel" id="panel-export" aria-labelledby="tab-export" hidden="until-found"><div class="panel-inner" id="pi-export"></div></div>
+        </div>
+      </section>
+
+      <!-- ============ ALL PAGES (BULK) ============ -->
+      <section id="bulk" hidden>
+        <div class="card summary-bar">
+          <div class="sb-main">
+            <div class="sb-title">All pages in <span id="bulk-project-name"></span></div>
+            <div class="sb-meta muted small" id="bulk-meta"></div>
+          </div>
+        </div>
+        <div class="tabs-sticky">
+          <div class="tablist" role="tablist" aria-label="Cross-page analysis" id="bulk-tablist">
+            <button type="button" role="tab" id="btab-compare" aria-selected="true" tabindex="0">Comparison</button>
+            <button type="button" role="tab" id="btab-dups" aria-selected="false" tabindex="-1">Duplicates &amp; cannibalization <span class="tcount" id="btc-dups"></span></button>
+            <button type="button" role="tab" id="btab-sim" aria-selected="false" tabindex="-1">Near-duplicate content <span class="tcount" id="btc-sim"></span></button>
+            <button type="button" role="tab" id="btab-links" aria-selected="false" tabindex="-1">Internal link map <span class="tcount" id="btc-links"></span></button>
+            <button type="button" role="tab" id="btab-ai" aria-selected="false" tabindex="-1">AI prompts</button>
+          </div>
+        </div>
+        <div class="panels">
+          <div role="tabpanel" id="bpanel-compare" aria-labelledby="btab-compare"><div class="panel-inner" id="bpi-compare"></div></div>
+          <div role="tabpanel" id="bpanel-dups" aria-labelledby="btab-dups" hidden="until-found"><div class="panel-inner" id="bpi-dups"></div></div>
+          <div role="tabpanel" id="bpanel-sim" aria-labelledby="btab-sim" hidden="until-found"><div class="panel-inner" id="bpi-sim"></div></div>
+          <div role="tabpanel" id="bpanel-links" aria-labelledby="btab-links" hidden="until-found"><div class="panel-inner" id="bpi-links"></div></div>
+          <div role="tabpanel" id="bpanel-ai" aria-labelledby="btab-ai" hidden="until-found"><div class="panel-inner" id="bpi-ai"></div></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-foot wrap-wide muted small">
+    HTML Content Extractor · works offline · pages are saved only in this browser · pixel widths and checks are approximations, not Google guarantees.
+  </footer>
+
+  <!-- Reusable modal: prompt / confirm -->
+  <dialog id="dlg" aria-labelledby="dlg-title">
+    <form method="dialog" class="dlg-form">
+      <h2 id="dlg-title"></h2>
+      <p id="dlg-msg" class="dlg-msg"></p>
+      <label class="field" id="dlg-field"><span id="dlg-label">Name</span><input type="text" id="dlg-input" autocomplete="off"></label>
+      <div class="dlg-actions">
+        <button class="btn" value="cancel" id="dlg-cancel" formnovalidate>Cancel</button>
+        <button class="btn primary" value="ok" id="dlg-ok">OK</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+</body>
+</html>
