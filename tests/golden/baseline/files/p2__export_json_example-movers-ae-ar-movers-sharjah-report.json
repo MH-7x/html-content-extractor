@@ -1,0 +1,1799 @@
+{
+  "meta": {
+    "generatedAt": "<ISO>",
+    "inputBytes": 8807,
+    "baseUrl": "https://example-movers.ae/ar/movers-sharjah/",
+    "baseSource": "URL you entered",
+    "siteHost": "example-movers.ae",
+    "parseMs": <N>
+  },
+  "head": {
+    "htmlAttrs": [
+      {
+        "name": "lang",
+        "value": "ar"
+      },
+      {
+        "name": "dir",
+        "value": "rtl"
+      }
+    ],
+    "lang": "ar",
+    "dir": "rtl",
+    "titles": [
+      "نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب"
+    ],
+    "title": "نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب",
+    "titleLen": 57,
+    "titlePx": 382,
+    "descriptions": [
+      "شركة مثال لنقل الاثاث في الشارقة: فك وتركيب وتغليف ونقل آمن للمنازل والمكاتب بأسعار مناسبة. اتصل الآن."
+    ],
+    "description": "شركة مثال لنقل الاثاث في الشارقة: فك وتركيب وتغليف ونقل آمن للمنازل والمكاتب بأسعار مناسبة. اتصل الآن.",
+    "descLen": 102,
+    "descPx": 495,
+    "keywordsMeta": null,
+    "robots": [
+      "index, follow, max-image-preview:large"
+    ],
+    "googlebot": [],
+    "bingbot": [],
+    "viewport": "width=device-width, initial-scale=1",
+    "charset": "UTF-8",
+    "canonicals": [
+      "https://example-movers.ae/ar/movers-sharjah/"
+    ],
+    "canonicalRaw": [
+      "https://example-movers.ae/ar/movers-sharjah/"
+    ],
+    "hreflang": [
+      {
+        "lang": "ar",
+        "href": "https://example-movers.ae/ar/movers-sharjah/"
+      },
+      {
+        "lang": "en",
+        "href": "https://example-movers.ae/movers-sharjah/"
+      }
+    ],
+    "icons": [
+      {
+        "rel": "icon",
+        "href": "https://example-movers.ae/wp-content/uploads/2024/01/fav-32x32.png",
+        "sizes": "32x32"
+      }
+    ],
+    "manifest": null,
+    "prev": null,
+    "next": null,
+    "amp": null,
+    "author": null,
+    "generator": [
+      "WordPress 6.6.1",
+      "Elementor 3.23.4; features: e_optimized_css_loading"
+    ],
+    "themeColor": null,
+    "og": {
+      "og:locale": [
+        "ar_AE"
+      ],
+      "og:type": [
+        "article"
+      ],
+      "og:title": [
+        "نقل اثاث الشارقة | شركة مثال"
+      ],
+      "og:description": [
+        "فك وتركيب وتغليف ونقل اثاث في الشارقة."
+      ],
+      "og:url": [
+        "https://example-movers.ae/ar/movers-sharjah/"
+      ],
+      "og:site_name": [
+        "Example Movers"
+      ]
+    },
+    "twitter": {
+      "twitter:card": [
+        "summary_large_image"
+      ]
+    },
+    "verification": [
+      {
+        "key": "google-site-verification",
+        "content": "abc123exampletoken"
+      }
+    ],
+    "metas": [
+      {
+        "kind": "charset",
+        "key": "charset",
+        "keyLower": "charset",
+        "content": "UTF-8",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "viewport",
+        "keyLower": "viewport",
+        "content": "width=device-width, initial-scale=1",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "description",
+        "keyLower": "description",
+        "content": "شركة مثال لنقل الاثاث في الشارقة: فك وتركيب وتغليف ونقل آمن للمنازل والمكاتب بأسعار مناسبة. اتصل الآن.",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "robots",
+        "keyLower": "robots",
+        "content": "index, follow, max-image-preview:large",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:locale",
+        "keyLower": "og:locale",
+        "content": "ar_AE",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:type",
+        "keyLower": "og:type",
+        "content": "article",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:title",
+        "keyLower": "og:title",
+        "content": "نقل اثاث الشارقة | شركة مثال",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:description",
+        "keyLower": "og:description",
+        "content": "فك وتركيب وتغليف ونقل اثاث في الشارقة.",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:url",
+        "keyLower": "og:url",
+        "content": "https://example-movers.ae/ar/movers-sharjah/",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:site_name",
+        "keyLower": "og:site_name",
+        "content": "Example Movers",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "twitter:card",
+        "keyLower": "twitter:card",
+        "content": "summary_large_image",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "generator",
+        "keyLower": "generator",
+        "content": "WordPress 6.6.1",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "generator",
+        "keyLower": "generator",
+        "content": "Elementor 3.23.4; features: e_optimized_css_loading",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "google-site-verification",
+        "keyLower": "google-site-verification",
+        "content": "abc123exampletoken",
+        "inHead": true
+      }
+    ],
+    "linkTags": [
+      {
+        "rel": "canonical",
+        "href": "https://example-movers.ae/ar/movers-sharjah/",
+        "abs": "https://example-movers.ae/ar/movers-sharjah/",
+        "hreflang": "",
+        "type": "",
+        "sizes": "",
+        "media": "",
+        "as": "",
+        "inHead": true
+      },
+      {
+        "rel": "alternate",
+        "href": "https://example-movers.ae/ar/movers-sharjah/",
+        "abs": "https://example-movers.ae/ar/movers-sharjah/",
+        "hreflang": "ar",
+        "type": "",
+        "sizes": "",
+        "media": "",
+        "as": "",
+        "inHead": true
+      },
+      {
+        "rel": "alternate",
+        "href": "https://example-movers.ae/movers-sharjah/",
+        "abs": "https://example-movers.ae/movers-sharjah/",
+        "hreflang": "en",
+        "type": "",
+        "sizes": "",
+        "media": "",
+        "as": "",
+        "inHead": true
+      },
+      {
+        "rel": "icon",
+        "href": "https://example-movers.ae/wp-content/uploads/2024/01/fav-32x32.png",
+        "abs": "https://example-movers.ae/wp-content/uploads/2024/01/fav-32x32.png",
+        "hreflang": "",
+        "type": "",
+        "sizes": "32x32",
+        "media": "",
+        "as": "",
+        "inHead": true
+      },
+      {
+        "rel": "stylesheet",
+        "href": "https://example-movers.ae/wp-content/themes/astra/style.min.css",
+        "abs": "https://example-movers.ae/wp-content/themes/astra/style.min.css",
+        "hreflang": "",
+        "type": "",
+        "sizes": "",
+        "media": "",
+        "as": "",
+        "inHead": true
+      },
+      {
+        "rel": "preconnect",
+        "href": "https://fonts.gstatic.com",
+        "abs": "https://fonts.gstatic.com/",
+        "hreflang": "",
+        "type": "",
+        "sizes": "",
+        "media": "",
+        "as": "",
+        "inHead": true
+      }
+    ],
+    "scripts": [
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "id": "",
+        "async": false,
+        "defer": false,
+        "inline": true,
+        "size": 1037,
+        "inHead": true,
+        "preview": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://example-movers.ae/ar/movers-sharjah/\",\"url\":\"https://example-movers.ae/ar/movers-sh"
+      },
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "id": "",
+        "async": false,
+        "defer": false,
+        "inline": true,
+        "size": 350,
+        "inHead": true,
+        "preview": "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"كم تكلفة نقل اثاث شقة في الشارقة؟\",\"acceptedAnswer\":{\"@type\":\"Answe"
+      },
+      {
+        "src": "https://www.googletagmanager.com/gtag/js?id=G-ABC1234XYZ",
+        "type": "",
+        "id": "",
+        "async": true,
+        "defer": false,
+        "inline": false,
+        "size": 0,
+        "inHead": true,
+        "preview": ""
+      },
+      {
+        "src": "",
+        "type": "",
+        "id": "",
+        "async": false,
+        "defer": false,
+        "inline": true,
+        "size": 163,
+        "inHead": true,
+        "preview": "window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ABC1234XYZ');gtag('config','AW-123456789"
+      },
+      {
+        "src": "https://example-movers.ae/wp-includes/js/jquery/jquery.min.js",
+        "type": "",
+        "id": "",
+        "async": false,
+        "defer": false,
+        "inline": false,
+        "size": 0,
+        "inHead": true,
+        "preview": ""
+      }
+    ],
+    "stylesheets": [
+      "https://example-movers.ae/wp-content/themes/astra/style.min.css"
+    ],
+    "hints": [
+      {
+        "rel": "preconnect",
+        "href": "https://fonts.gstatic.com",
+        "abs": "https://fonts.gstatic.com/",
+        "hreflang": "",
+        "type": "",
+        "sizes": "",
+        "media": "",
+        "as": "",
+        "inHead": true
+      }
+    ]
+  },
+  "schema": {
+    "jsonld": [
+      {
+        "index": 1,
+        "raw": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://example-movers.ae/ar/movers-sharjah/\",\"url\":\"https://example-movers.ae/ar/movers-sharjah/\",\"name\":\"نقل اثاث الشارقة | شركة مثال\",\"isPartOf\":{\"@id\":\"https://example-movers.ae/#website\"},\"inLanguage\":\"ar\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https://example-movers.ae/ar/movers-sharjah/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"الرئيسية\",\"item\":\"https://example-movers.ae/ar/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"نقل اثاث الشارقة\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://example-movers.ae/#website\",\"url\":\"https://example-movers.ae/\",\"name\":\"Example Movers\"},{\"@type\":\"MovingCompany\",\"@id\":\"https://example-movers.ae/#org\",\"name\":\"Example Movers\",\"url\":\"https://example-movers.ae/\",\"telephone\":\"+971500000000\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Al Quoz 3\",\"addressLocality\":\"Dubai\",\"addressCountry\":\"AE\"},\"areaServed\":[\"Dubai\",\"Sharjah\",\"Ajman\"],\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.8\"}}]}",
+        "valid": true,
+        "error": null,
+        "data": {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://example-movers.ae/ar/movers-sharjah/",
+              "url": "https://example-movers.ae/ar/movers-sharjah/",
+              "name": "نقل اثاث الشارقة | شركة مثال",
+              "isPartOf": {
+                "@id": "https://example-movers.ae/#website"
+              },
+              "inLanguage": "ar"
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://example-movers.ae/ar/movers-sharjah/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "الرئيسية",
+                  "item": "https://example-movers.ae/ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "نقل اثاث الشارقة"
+                }
+              ]
+            },
+            {
+              "@type": "WebSite",
+              "@id": "https://example-movers.ae/#website",
+              "url": "https://example-movers.ae/",
+              "name": "Example Movers"
+            },
+            {
+              "@type": "MovingCompany",
+              "@id": "https://example-movers.ae/#org",
+              "name": "Example Movers",
+              "url": "https://example-movers.ae/",
+              "telephone": "+971500000000",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Al Quoz 3",
+                "addressLocality": "Dubai",
+                "addressCountry": "AE"
+              },
+              "areaServed": [
+                "Dubai",
+                "Sharjah",
+                "Ajman"
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8"
+              }
+            }
+          ]
+        },
+        "entities": [
+          {
+            "type": "WebPage",
+            "id": "https://example-movers.ae/ar/movers-sharjah/",
+            "data": {
+              "@type": "WebPage",
+              "@id": "https://example-movers.ae/ar/movers-sharjah/",
+              "url": "https://example-movers.ae/ar/movers-sharjah/",
+              "name": "نقل اثاث الشارقة | شركة مثال",
+              "isPartOf": {
+                "@id": "https://example-movers.ae/#website"
+              },
+              "inLanguage": "ar"
+            },
+            "checks": [
+              {
+                "sev": "warning",
+                "msg": "Missing recommended WebPage properties: description"
+              }
+            ]
+          },
+          {
+            "type": "BreadcrumbList",
+            "id": "https://example-movers.ae/ar/movers-sharjah/#breadcrumb",
+            "data": {
+              "@type": "BreadcrumbList",
+              "@id": "https://example-movers.ae/ar/movers-sharjah/#breadcrumb",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "الرئيسية",
+                  "item": "https://example-movers.ae/ar/"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "نقل اثاث الشارقة"
+                }
+              ]
+            },
+            "checks": [
+              {
+                "sev": "pass",
+                "msg": "All commonly recommended BreadcrumbList properties present"
+              },
+              {
+                "sev": "pass",
+                "msg": "2 breadcrumb items look complete"
+              }
+            ]
+          },
+          {
+            "type": "WebSite",
+            "id": "https://example-movers.ae/#website",
+            "data": {
+              "@type": "WebSite",
+              "@id": "https://example-movers.ae/#website",
+              "url": "https://example-movers.ae/",
+              "name": "Example Movers"
+            },
+            "checks": [
+              {
+                "sev": "pass",
+                "msg": "All commonly recommended WebSite properties present"
+              }
+            ]
+          },
+          {
+            "type": "MovingCompany",
+            "id": "https://example-movers.ae/#org",
+            "data": {
+              "@type": "MovingCompany",
+              "@id": "https://example-movers.ae/#org",
+              "name": "Example Movers",
+              "url": "https://example-movers.ae/",
+              "telephone": "+971500000000",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Al Quoz 3",
+                "addressLocality": "Dubai",
+                "addressCountry": "AE"
+              },
+              "areaServed": [
+                "Dubai",
+                "Sharjah",
+                "Ajman"
+              ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8"
+              }
+            },
+            "checks": [
+              {
+                "sev": "warning",
+                "msg": "Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange"
+              },
+              {
+                "sev": "error",
+                "msg": "aggregateRating needs reviewCount or ratingCount"
+              }
+            ]
+          }
+        ],
+        "className": "yoast-schema-graph",
+        "id": "",
+        "inHead": true
+      },
+      {
+        "index": 2,
+        "raw": "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"كم تكلفة نقل اثاث شقة في الشارقة؟\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.\"}},{\"@type\":\"Question\",\"name\":\"هل تقدمون خدمة التخزين؟\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"نعم، لدينا مستودعات مكيفة.\"}}]}",
+        "valid": true,
+        "error": null,
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "كم تكلفة نقل اثاث شقة في الشارقة؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "هل تقدمون خدمة التخزين؟",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "نعم، لدينا مستودعات مكيفة."
+              }
+            }
+          ]
+        },
+        "entities": [
+          {
+            "type": "FAQPage",
+            "id": "",
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "كم تكلفة نقل اثاث شقة في الشارقة؟",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "هل تقدمون خدمة التخزين؟",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "نعم، لدينا مستودعات مكيفة."
+                  }
+                }
+              ]
+            },
+            "checks": [
+              {
+                "sev": "pass",
+                "msg": "All commonly recommended FAQPage properties present"
+              },
+              {
+                "sev": "pass",
+                "msg": "2 FAQ questions, all with answers"
+              },
+              {
+                "sev": "warning",
+                "msg": "1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\""
+              }
+            ]
+          }
+        ],
+        "className": "",
+        "id": "",
+        "inHead": true
+      }
+    ],
+    "microdata": [],
+    "rdfa": [],
+    "typeCounts": {
+      "WebPage": 1,
+      "BreadcrumbList": 1,
+      "ListItem": 2,
+      "WebSite": 1,
+      "MovingCompany": 1,
+      "PostalAddress": 1,
+      "AggregateRating": 1,
+      "FAQPage": 1,
+      "Question": 2,
+      "Answer": 2
+    }
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "نقل اثاث الشارقة مع الفك والتركيب",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 33
+    },
+    {
+      "level": 2,
+      "text": "نقل اثاث الشارقة",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "hidden on desktop",
+      "id": "",
+      "length": 16
+    },
+    {
+      "level": 2,
+      "text": "خدمات نقل الاثاث في الشارقة",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 27
+    },
+    {
+      "level": 4,
+      "text": "لماذا تختارنا؟",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [
+        "skipped H3"
+      ],
+      "hidden": "",
+      "id": "",
+      "length": 14
+    },
+    {
+      "level": 2,
+      "text": "أسعار نقل الاثاث في الشارقة",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 27
+    },
+    {
+      "level": 2,
+      "text": "الأسئلة الشائعة",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 15
+    },
+    {
+      "level": 3,
+      "text": "تواصل معنا",
+      "fromAlt": false,
+      "region": "footer",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 10
+    }
+  ],
+  "content": {
+    "blocks": [
+      {
+        "type": "image",
+        "src": "https://example-movers.ae/wp-content/uploads/2024/01/logo.png",
+        "alt": "شعار شركة مثال لنقل الاثاث",
+        "title": "",
+        "width": "180",
+        "height": "60",
+        "region": "header"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "text": "الرئيسية",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/\">الرئيسية</a>",
+            "md": "[الرئيسية](https://example-movers.ae/ar/)",
+            "depth": 0
+          },
+          {
+            "text": "نقل اثاث دبي",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/movers-dubai/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/movers-dubai/\">نقل اثاث دبي</a>",
+            "md": "[نقل اثاث دبي](https://example-movers.ae/ar/movers-dubai/)",
+            "depth": 0
+          },
+          {
+            "text": "نقل اثاث الشارقة",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/movers-sharjah/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/movers-sharjah/\">نقل اثاث الشارقة</a>",
+            "md": "[نقل اثاث الشارقة](https://example-movers.ae/ar/movers-sharjah/)",
+            "depth": 1
+          },
+          {
+            "text": "نقل اثاث عجمان",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/movers-ajman/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/movers-ajman/\">نقل اثاث عجمان</a>",
+            "md": "[نقل اثاث عجمان](https://example-movers.ae/ar/movers-ajman/)",
+            "depth": 1
+          },
+          {
+            "text": "اتصل بنا",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/contact/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/contact/\">اتصل بنا</a>",
+            "md": "[اتصل بنا](https://example-movers.ae/ar/contact/)",
+            "depth": 0
+          },
+          {
+            "text": "English",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/movers-dubai/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/movers-dubai/\">English</a>",
+            "md": "[English](https://example-movers.ae/movers-dubai/)",
+            "depth": 0
+          }
+        ],
+        "region": "header"
+      },
+      {
+        "type": "link",
+        "href": "https://wa.me/971500000000",
+        "text": "واتساب",
+        "html": "<a class=\"il\" href=\"https://wa.me/971500000000\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://wa.me/971500000000\">واتساب</a>",
+        "md": "[واتساب](https://wa.me/971500000000)",
+        "region": "header"
+      },
+      {
+        "type": "text",
+        "tag": "nav",
+        "text": "الرئيسية » نقل اثاث الشارقة",
+        "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/\">الرئيسية</a> » نقل اثاث الشارقة",
+        "md": "[الرئيسية](https://example-movers.ae/ar/) » نقل اثاث الشارقة",
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "نقل اثاث الشارقة مع الفك والتركيب",
+        "html": "نقل اثاث الشارقة مع الفك والتركيب",
+        "md": "نقل اثاث الشارقة مع الفك والتركيب",
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "نقل اثاث الشارقة",
+        "html": "نقل اثاث الشارقة",
+        "md": "نقل اثاث الشارقة",
+        "region": "main",
+        "hidden": "hidden on desktop"
+      },
+      {
+        "type": "text",
+        "tag": "div",
+        "text": "شركة مثال لنقل الاثاث هي خيارك الأول في الشارقة لنقل اثاث المنازل والشقق والفلل والمكاتب. نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق الشارقة.",
+        "html": "شركة مثال لنقل الاثاث هي خيارك الأول في الشارقة لنقل <strong>اثاث المنازل والشقق والفلل والمكاتب</strong>. نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق الشارقة.",
+        "md": "شركة مثال لنقل الاثاث هي خيارك الأول في الشارقة لنقل **اثاث المنازل والشقق والفلل والمكاتب**. نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق الشارقة.",
+        "region": "main"
+      },
+      {
+        "type": "link",
+        "href": "tel:+971500000000",
+        "text": "اتصل الآن",
+        "html": "<a class=\"il\" href=\"tel:+971500000000\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"tel:+971500000000\">اتصل الآن</a>",
+        "md": "[اتصل الآن](tel:+971500000000)",
+        "region": "main"
+      },
+      {
+        "type": "image",
+        "src": "https://example-movers.ae/wp-content/uploads/2024/02/IMG_2045.jpg",
+        "alt": null,
+        "title": "",
+        "width": "800",
+        "height": "500",
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "خدمات نقل الاثاث في الشارقة",
+        "html": "خدمات نقل الاثاث في الشارقة",
+        "md": "خدمات نقل الاثاث في الشارقة",
+        "region": "main"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل الشارقة ومن الشارقة إلى باقي الإمارات. يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.",
+        "html": "نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل الشارقة ومن الشارقة إلى باقي الإمارات. يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.",
+        "md": "نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل الشارقة ومن الشارقة إلى باقي الإمارات. يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.",
+        "region": "main"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "text": "فك وتركيب غرف النوم والمطابخ",
+            "html": "فك وتركيب غرف النوم والمطابخ",
+            "md": "فك وتركيب غرف النوم والمطابخ",
+            "depth": 0
+          },
+          {
+            "text": "تغليف الاثاث بمواد عالية الجودة",
+            "html": "تغليف الاثاث بمواد عالية الجودة",
+            "md": "تغليف الاثاث بمواد عالية الجودة",
+            "depth": 0
+          },
+          {
+            "text": "نقل الاثاث بشاحنات مغلقة",
+            "html": "نقل الاثاث بشاحنات مغلقة",
+            "md": "نقل الاثاث بشاحنات مغلقة",
+            "depth": 0
+          },
+          {
+            "text": "تركيب الستائر والتلفزيونات",
+            "html": "تركيب الستائر والتلفزيونات",
+            "md": "تركيب الستائر والتلفزيونات",
+            "depth": 0
+          }
+        ],
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 4,
+        "text": "لماذا تختارنا؟",
+        "html": "لماذا تختارنا؟",
+        "md": "لماذا تختارنا؟",
+        "region": "main"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "لأننا نهتم بالتفاصيل الصغيرة. اقرأ المزيد",
+        "html": "لأننا نهتم بالتفاصيل الصغيرة. <a class=\"il\" href=\"https://example-movers.ae/ar/about/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/about/\">اقرأ المزيد</a>",
+        "md": "لأننا نهتم بالتفاصيل الصغيرة. [اقرأ المزيد](https://example-movers.ae/ar/about/)",
+        "region": "main"
+      },
+      {
+        "type": "image",
+        "src": "https://example-movers.ae/wp-content/uploads/2024/02/movers-truck-dubai.webp",
+        "alt": "شاحنة نقل اثاث مغلقة في الشارقة",
+        "title": "",
+        "width": "600",
+        "height": "400",
+        "region": "main"
+      },
+      {
+        "type": "caption",
+        "tag": "figcaption",
+        "text": "شاحنة مغلقة لنقل الاثاث",
+        "html": "شاحنة مغلقة لنقل الاثاث",
+        "md": "شاحنة مغلقة لنقل الاثاث",
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "أسعار نقل الاثاث في الشارقة",
+        "html": "أسعار نقل الاثاث في الشارقة",
+        "md": "أسعار نقل الاثاث في الشارقة",
+        "region": "main"
+      },
+      {
+        "type": "table",
+        "caption": "",
+        "rows": [
+          [
+            {
+              "text": "نوع الوحدة",
+              "html": "نوع الوحدة",
+              "md": "نوع الوحدة",
+              "th": true
+            },
+            {
+              "text": "السعر التقريبي",
+              "html": "السعر التقريبي",
+              "md": "السعر التقريبي",
+              "th": true
+            }
+          ],
+          [
+            {
+              "text": "استوديو",
+              "html": "استوديو",
+              "md": "استوديو",
+              "th": false
+            },
+            {
+              "text": "من 800 درهم",
+              "html": "من 800 درهم",
+              "md": "من 800 درهم",
+              "th": false
+            }
+          ],
+          [
+            {
+              "text": "شقة غرفتين",
+              "html": "شقة غرفتين",
+              "md": "شقة غرفتين",
+              "th": false
+            },
+            {
+              "text": "من 1500 درهم",
+              "html": "من 1500 درهم",
+              "md": "من 1500 درهم",
+              "th": false
+            }
+          ],
+          [
+            {
+              "text": "فيلا",
+              "html": "فيلا",
+              "md": "فيلا",
+              "th": false
+            },
+            {
+              "text": "من 3500 درهم",
+              "html": "من 3500 درهم",
+              "md": "من 3500 درهم",
+              "th": false
+            }
+          ]
+        ],
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "الأسئلة الشائعة",
+        "html": "الأسئلة الشائعة",
+        "md": "الأسئلة الشائعة",
+        "region": "main"
+      },
+      {
+        "type": "text",
+        "tag": "summary",
+        "text": "كم تكلفة نقل اثاث شقة في الشارقة؟",
+        "html": "كم تكلفة نقل اثاث شقة في الشارقة؟",
+        "md": "كم تكلفة نقل اثاث شقة في الشارقة؟",
+        "region": "main"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+        "html": "تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+        "md": "تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+        "region": "main"
+      },
+      {
+        "type": "text",
+        "tag": "summary",
+        "text": "هل تعملون يوم الجمعة؟",
+        "html": "هل تعملون يوم الجمعة؟",
+        "md": "هل تعملون يوم الجمعة؟",
+        "region": "main"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "نعم، نعمل طوال أيام الأسبوع.",
+        "html": "نعم، نعمل طوال أيام الأسبوع.",
+        "md": "نعم، نعمل طوال أيام الأسبوع.",
+        "region": "main"
+      },
+      {
+        "type": "embed",
+        "kind": "iframe",
+        "src": "https://www.youtube.com/embed/xyz123",
+        "title": "فيديو عن خدمات نقل الاثاث",
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 3,
+        "text": "تواصل معنا",
+        "html": "تواصل معنا",
+        "md": "تواصل معنا",
+        "region": "footer"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "دبي، القوز 3 · +971 50 000 0000 · info@example-movers.ae",
+        "html": "دبي، القوز 3 · <a class=\"il\" href=\"tel:+971500000000\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"tel:+971500000000\">+971 50 000 0000</a> · <a class=\"il\" href=\"mailto:info@example-movers.ae\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"mailto:info@example-movers.ae\">info@example-movers.ae</a>",
+        "md": "دبي، القوز 3 · [+971 50 000 0000](tel:+971500000000) · [info@example-movers.ae](mailto:info@example-movers.ae)",
+        "region": "footer"
+      },
+      {
+        "type": "image",
+        "src": "https://example-movers.ae/wp-content/uploads/fb.png",
+        "alt": null,
+        "title": "",
+        "width": "",
+        "height": "",
+        "region": "footer"
+      },
+      {
+        "type": "link",
+        "href": "https://partner-site.com/",
+        "text": "شريكنا",
+        "html": "<a class=\"il\" href=\"https://partner-site.com/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://partner-site.com/\">شريكنا</a>",
+        "md": "[شريكنا](https://partner-site.com/)",
+        "region": "footer"
+      },
+      {
+        "type": "link",
+        "href": "https://example-movers.ae/ar/movers-sharjah/#",
+        "text": "أعلى الصفحة",
+        "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/movers-sharjah/#\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/movers-sharjah/#\">أعلى الصفحة</a>",
+        "md": "[أعلى الصفحة](https://example-movers.ae/ar/movers-sharjah/#)",
+        "region": "footer"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "© 2026 Example Movers. جميع الحقوق محفوظة.",
+        "html": "© 2026 Example Movers. جميع الحقوق محفوظة.",
+        "md": "© 2026 Example Movers. جميع الحقوق محفوظة.",
+        "region": "footer"
+      }
+    ],
+    "hasMain": true
+  },
+  "links": {
+    "items": [
+      {
+        "text": "شعار شركة مثال لنقل الاثاث",
+        "source": "image alt",
+        "href": "https://example-movers.ae/ar/",
+        "abs": "https://example-movers.ae/ar/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": true,
+        "flags": [],
+        "title": "",
+        "occurrences": 3
+      },
+      {
+        "text": "الرئيسية",
+        "source": "text",
+        "href": "https://example-movers.ae/ar/",
+        "abs": "https://example-movers.ae/ar/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 3
+      },
+      {
+        "text": "نقل اثاث دبي",
+        "source": "text",
+        "href": "https://example-movers.ae/ar/movers-dubai/",
+        "abs": "https://example-movers.ae/ar/movers-dubai/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "نقل اثاث الشارقة",
+        "source": "text",
+        "href": "/ar/movers-sharjah/",
+        "abs": "https://example-movers.ae/ar/movers-sharjah/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "نقل اثاث عجمان",
+        "source": "text",
+        "href": "/ar/movers-ajman/",
+        "abs": "https://example-movers.ae/ar/movers-ajman/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "اتصل بنا",
+        "source": "text",
+        "href": "/ar/contact/",
+        "abs": "https://example-movers.ae/ar/contact/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "English",
+        "source": "text",
+        "href": "/movers-dubai/",
+        "abs": "https://example-movers.ae/movers-dubai/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "واتساب",
+        "source": "text",
+        "href": "https://wa.me/971500000000",
+        "abs": "https://wa.me/971500000000",
+        "type": "whatsapp",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "الرئيسية",
+        "source": "text",
+        "href": "/ar/",
+        "abs": "https://example-movers.ae/ar/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "main",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 3
+      },
+      {
+        "text": "اتصل الآن",
+        "source": "text",
+        "href": "tel:+971500000000",
+        "abs": "tel:+971500000000",
+        "type": "phone",
+        "rel": "",
+        "target": "",
+        "region": "main",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 2
+      },
+      {
+        "text": "اقرأ المزيد",
+        "source": "text",
+        "href": "/ar/about/",
+        "abs": "https://example-movers.ae/ar/about/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "main",
+        "hasImage": false,
+        "flags": [
+          "generic anchor"
+        ],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "+971 50 000 0000",
+        "source": "text",
+        "href": "tel:+971500000000",
+        "abs": "tel:+971500000000",
+        "type": "phone",
+        "rel": "",
+        "target": "",
+        "region": "footer",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 2
+      },
+      {
+        "text": "info@example-movers.ae",
+        "source": "text",
+        "href": "mailto:info@example-movers.ae",
+        "abs": "mailto:info@example-movers.ae",
+        "type": "email",
+        "rel": "",
+        "target": "",
+        "region": "footer",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "",
+        "source": "none",
+        "href": "https://www.facebook.com/examplemovers",
+        "abs": "https://www.facebook.com/examplemovers",
+        "type": "external",
+        "rel": "",
+        "target": "_blank",
+        "region": "footer",
+        "hasImage": true,
+        "flags": [
+          "no anchor text",
+          "no noopener"
+        ],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "شريكنا",
+        "source": "text",
+        "href": "https://partner-site.com/",
+        "abs": "https://partner-site.com/",
+        "type": "external",
+        "rel": "nofollow sponsored",
+        "target": "",
+        "region": "footer",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "أعلى الصفحة",
+        "source": "text",
+        "href": "#",
+        "abs": "https://example-movers.ae/ar/movers-sharjah/#",
+        "type": "anchor",
+        "rel": "",
+        "target": "",
+        "region": "footer",
+        "hasImage": false,
+        "flags": [
+          "empty/# href"
+        ],
+        "title": "",
+        "occurrences": 1
+      }
+    ],
+    "summary": {
+      "total": 16,
+      "unique": 13,
+      "internal": 9,
+      "external": 2,
+      "anchor": 1,
+      "whatsapp": 1,
+      "phone": 2,
+      "email": 1,
+      "javascript": 0,
+      "nofollow": 1,
+      "withIssues": 3,
+      "uniqueExternalDomains": [
+        "facebook.com",
+        "partner-site.com"
+      ]
+    }
+  },
+  "images": {
+    "items": [
+      {
+        "src": "https://example-movers.ae/wp-content/uploads/2024/01/logo.png",
+        "file": "logo.png",
+        "ext": "png",
+        "alt": "شعار شركة مثال لنقل الاثاث",
+        "title": "",
+        "width": "180",
+        "height": "60",
+        "loading": "",
+        "fetchpriority": "",
+        "srcset": "",
+        "sizes": "",
+        "region": "header",
+        "linkTo": "https://example-movers.ae/ar/",
+        "flags": [
+          "legacy format (consider WebP/AVIF)"
+        ],
+        "kind": "img"
+      },
+      {
+        "src": "https://example-movers.ae/wp-content/uploads/2024/02/IMG_2045.jpg",
+        "file": "IMG_2045.jpg",
+        "ext": "jpg",
+        "alt": null,
+        "title": "",
+        "width": "800",
+        "height": "500",
+        "loading": "",
+        "fetchpriority": "",
+        "srcset": "",
+        "sizes": "",
+        "region": "main",
+        "linkTo": "",
+        "flags": [
+          "alt missing",
+          "non-descriptive filename",
+          "legacy format (consider WebP/AVIF)"
+        ],
+        "kind": "img"
+      },
+      {
+        "src": "https://example-movers.ae/wp-content/uploads/2024/02/movers-truck-dubai.webp",
+        "file": "movers-truck-dubai.webp",
+        "ext": "webp",
+        "alt": "شاحنة نقل اثاث مغلقة في الشارقة",
+        "title": "",
+        "width": "600",
+        "height": "400",
+        "loading": "lazy",
+        "fetchpriority": "",
+        "srcset": "",
+        "sizes": "",
+        "region": "main",
+        "linkTo": "",
+        "flags": [],
+        "kind": "img"
+      },
+      {
+        "src": "https://example-movers.ae/wp-content/uploads/fb.png",
+        "file": "fb.png",
+        "ext": "png",
+        "alt": null,
+        "title": "",
+        "width": "",
+        "height": "",
+        "loading": "",
+        "fetchpriority": "",
+        "srcset": "",
+        "sizes": "",
+        "region": "footer",
+        "linkTo": "https://www.facebook.com/examplemovers",
+        "flags": [
+          "alt missing",
+          "no width/height",
+          "legacy format (consider WebP/AVIF)"
+        ],
+        "kind": "img"
+      }
+    ],
+    "ogImage": null,
+    "summary": {
+      "total": 4,
+      "backgrounds": 0,
+      "missingAlt": 2,
+      "emptyAlt": 0,
+      "withAlt": 2,
+      "noDims": 1,
+      "lazy": 1,
+      "formats": {
+        "png": 2,
+        "jpg": 1,
+        "webp": 1
+      }
+    }
+  },
+  "stats": {
+    "mainWords": 162,
+    "allWords": 197,
+    "mainChars": 970,
+    "sentences": 23,
+    "avgSentence": 7,
+    "longSentences": 0,
+    "paragraphs": 6,
+    "textBlocks": 4,
+    "lists": 2,
+    "tables": 1,
+    "readingMin": 1,
+    "textRatio": 15.7,
+    "script": "Arabic",
+    "arabicShare": 100
+  },
+  "keywords": {
+    "totalWords": 162,
+    "uniqueWords": 116,
+    "one": [
+      {
+        "phrase": "الشارقة",
+        "count": 10,
+        "density": 6.2
+      },
+      {
+        "phrase": "نقل",
+        "count": 7,
+        "density": 4.3
+      },
+      {
+        "phrase": "الاثاث",
+        "count": 6,
+        "density": 3.7
+      },
+      {
+        "phrase": "اثاث",
+        "count": 5,
+        "density": 3.1
+      },
+      {
+        "phrase": "درهم",
+        "count": 4,
+        "density": 2.5
+      },
+      {
+        "phrase": "لنقل",
+        "count": 3,
+        "density": 1.9
+      },
+      {
+        "phrase": "الفك",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "والتركيب",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "الاسبوع",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "تغليف",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "عالية",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "الجودة",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "مغلقة",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "شقة",
+        "count": 2,
+        "density": 1.2
+      },
+      {
+        "phrase": "الرئيسية",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "شركة",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "مثال",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "خيارك",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "الاول",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "المنازل",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "والشقق",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "والفلل",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "والمكاتب",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "نقدم",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "خدمة",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "متكاملة",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "تشمل",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "والتغليف",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "والنقل",
+        "count": 1,
+        "density": 0.6
+      },
+      {
+        "phrase": "بايدي",
+        "count": 1,
+        "density": 0.6
+      }
+    ],
+    "two": [
+      {
+        "phrase": "نقل اثاث",
+        "count": 4,
+        "density": 4.9
+      },
+      {
+        "phrase": "اثاث الشارقة",
+        "count": 3,
+        "density": 3.7
+      },
+      {
+        "phrase": "نقل الاثاث",
+        "count": 3,
+        "density": 3.7
+      },
+      {
+        "phrase": "لنقل الاثاث",
+        "count": 2,
+        "density": 2.5
+      },
+      {
+        "phrase": "عالية الجودة",
+        "count": 2,
+        "density": 2.5
+      }
+    ],
+    "three": [
+      {
+        "phrase": "نقل اثاث الشارقة",
+        "count": 3,
+        "density": 5.6
+      },
+      {
+        "phrase": "الاثاث في الشارقة",
+        "count": 2,
+        "density": 3.7
+      }
+    ]
+  },
+  "tech": {
+    "found": [
+      {
+        "name": "WordPress",
+        "cat": "CMS",
+        "evidence": "generator: WordPress 6.6.1 | Elementor 3.23.4; features: e_optimized_css_loading"
+      },
+      {
+        "name": "Yoast SEO",
+        "cat": "SEO plugin",
+        "evidence": "Yoast comment / schema class"
+      },
+      {
+        "name": "Elementor",
+        "cat": "Page builder",
+        "evidence": "elementor classes"
+      },
+      {
+        "name": "Astra theme",
+        "cat": "Theme",
+        "evidence": "astra assets"
+      },
+      {
+        "name": "jQuery",
+        "cat": "JS library",
+        "evidence": "jquery script"
+      },
+      {
+        "name": "Google Analytics 4",
+        "cat": "Tracking",
+        "evidence": "G-ABC1234XYZ"
+      },
+      {
+        "name": "Google Ads tag",
+        "cat": "Tracking",
+        "evidence": "AW-123456789"
+      }
+    ],
+    "comments": [
+      "This site is optimized with the Yoast SEO plugin v23.1 - https://yoast.com/wordpress/plugins/seo/"
+    ],
+    "nextData": null
+  },
+  "issues": [
+    {
+      "sev": "error",
+      "cat": "Schema",
+      "msg": "MovingCompany: aggregateRating needs reviewCount or ratingCount",
+      "detail": ""
+    },
+    {
+      "sev": "warning",
+      "cat": "Content",
+      "msg": "Thin main content: 162 words",
+      "detail": ""
+    },
+    {
+      "sev": "warning",
+      "cat": "Images",
+      "msg": "2 of 4 images have no alt attribute",
+      "detail": ""
+    },
+    {
+      "sev": "warning",
+      "cat": "Links",
+      "msg": "1 link(s) without any anchor text",
+      "detail": ""
+    },
+    {
+      "sev": "warning",
+      "cat": "Schema",
+      "msg": "WebPage: Missing recommended WebPage properties: description",
+      "detail": ""
+    },
+    {
+      "sev": "warning",
+      "cat": "Schema",
+      "msg": "MovingCompany: Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+      "detail": ""
+    },
+    {
+      "sev": "warning",
+      "cat": "Schema",
+      "msg": "FAQPage: 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\"",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "International",
+      "msg": "hreflang set without x-default",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Headings",
+      "msg": "1 heading level skip(s)",
+      "detail": "H4: لماذا تختارنا؟"
+    },
+    {
+      "sev": "notice",
+      "cat": "Headings",
+      "msg": "1 heading(s) inside hidden elements",
+      "detail": "H2: نقل اثاث الشارقة (hidden on desktop)"
+    },
+    {
+      "sev": "notice",
+      "cat": "Content",
+      "msg": "1 content block(s) are hidden (display:none, device-hidden, etc.)",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Images",
+      "msg": "1 image(s) without width/height (layout shift risk)",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Images",
+      "msg": "3 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Links",
+      "msg": "1 link(s) with generic anchor text (\"read more\", \"click here\"…)",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Social",
+      "msg": "Missing Open Graph: og:image",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Meta",
+      "msg": "Title length OK (57 chars, ~382px)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Meta",
+      "msg": "Meta description length OK (102 chars)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Indexing",
+      "msg": "Canonical tag present",
+      "detail": "https://example-movers.ae/ar/movers-sharjah/"
+    },
+    {
+      "sev": "pass",
+      "cat": "Indexing",
+      "msg": "Indexable (robots: index, follow, max-image-preview:large)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Technical",
+      "msg": "Language declared: ar (dir=rtl)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "International",
+      "msg": "2 hreflang alternates",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Headings",
+      "msg": "Exactly one H1",
+      "detail": "نقل اثاث الشارقة مع الفك والتركيب"
+    },
+    {
+      "sev": "pass",
+      "cat": "Links",
+      "msg": "9 internal links, 2 external",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Schema",
+      "msg": "Structured data types: WebPage, BreadcrumbList, ListItem, WebSite, MovingCompany, PostalAddress, AggregateRating, FAQPage, Question, Answer",
+      "detail": ""
+    }
+  ]
+}

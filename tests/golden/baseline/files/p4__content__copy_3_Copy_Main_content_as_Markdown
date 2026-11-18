@@ -1,0 +1,20 @@
+# Furniture Movers in Dubai, Sharjah and Ajman
+
+Example Movers is a moving company serving families and businesses across the northern Emirates. Our crews dismantle, wrap, load, transport and reassemble furniture so you can move without stress.
+
+## Where we work
+
+- [Movers in Dubai (Arabic)](https://example-movers.ae/ar/movers-dubai/)
+- [Movers in Sharjah (Arabic)](https://example-movers.ae/ar/movers-sharjah/)
+- Ajman moves on request
+
+## How a move works
+
+1. Free survey by phone or WhatsApp
+2. Fixed quote before moving day
+3. Packing, loading and transport
+4. Assembly and placement in your new home
+
+Call [+971 50 000 0000](tel:+971500000000) or message us on [WhatsApp](https://wa.me/971500000000) for a quote.
+
+![Example Movers team loading a truck](https://example-movers.ae/team.jpg)

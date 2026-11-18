@@ -1,0 +1,43 @@
+﻿order,section,type,level_or_tag,text,hidden
+1,Header,image,,https://example-movers.ae/wp-content/uploads/2024/01/logo.png | alt: شعار شركة مثال لنقل الاثاث,
+2,Header,list,,"الرئيسية
+نقل اثاث دبي
+نقل اثاث الشارقة
+نقل اثاث عجمان
+اتصل بنا
+English",
+3,Header,link,,واتساب,
+4,Main content,text,nav,الرئيسية » نقل اثاث عجمان,
+5,Main content,heading,H1,نقل اثاث عجمان مع الفك والتركيب,
+6,Main content,heading,H2,نقل اثاث عجمان,hidden on desktop
+7,Main content,text,div,شركة مثال لنقل الاثاث هي خيارك الأول في عجمان لنقل اثاث المنازل والشقق والفلل والمكاتب. نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق عجمان.,
+8,Main content,link,,اتصل الآن,
+9,Main content,image,,https://example-movers.ae/wp-content/uploads/2024/02/IMG_2045.jpg | alt: (missing),
+10,Main content,paragraph,p,نخدم جميع مناطق عجمان بما فيها النعيمية والراشدية والجرف، ونوفر شاحنات صغيرة مناسبة للشوارع الضيقة والمباني القديمة.,
+11,Main content,heading,H2,خدمات نقل الاثاث في عجمان,
+12,Main content,paragraph,p,نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل عجمان ومن عجمان إلى باقي الإمارات. يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.,
+13,Main content,list,,"فك وتركيب غرف النوم والمطابخ
+تغليف الاثاث بمواد عالية الجودة
+نقل الاثاث بشاحنات مغلقة
+تركيب الستائر والتلفزيونات",
+14,Main content,heading,H4,لماذا تختارنا؟,
+15,Main content,paragraph,p,لأننا نهتم بالتفاصيل الصغيرة. اقرأ المزيد,
+16,Main content,image,,https://example-movers.ae/wp-content/uploads/2024/02/movers-truck-dubai.webp | alt: شاحنة نقل اثاث مغلقة في عجمان,
+17,Main content,caption,figcaption,شاحنة مغلقة لنقل الاثاث,
+18,Main content,heading,H2,أسعار نقل الاثاث في عجمان,
+19,Main content,table,,"نوع الوحدة السعر التقريبي
+استوديو من 800 درهم
+شقة غرفتين من 1500 درهم
+فيلا من 3500 درهم",
+20,Main content,heading,H2,الأسئلة الشائعة,
+21,Main content,text,summary,كم تكلفة نقل اثاث شقة في عجمان؟,
+22,Main content,paragraph,p,تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.,
+23,Main content,text,summary,هل تعملون يوم الجمعة؟,
+24,Main content,paragraph,p,نعم، نعمل طوال أيام الأسبوع.,
+25,Main content,embed,,,
+26,Footer,heading,H3,تواصل معنا,
+27,Footer,paragraph,p,دبي، القوز 3 · +971 50 000 0000 · info@example-movers.ae,
+28,Footer,image,,https://example-movers.ae/wp-content/uploads/fb.png | alt: (missing),
+29,Footer,link,,شريكنا,
+30,Footer,link,,أعلى الصفحة,
+31,Footer,paragraph,p,© 2026 Example Movers. جميع الحقوق محفوظة.,

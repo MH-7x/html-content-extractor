@@ -1,0 +1,83 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://example-movers.ae/ar/movers-dubai/",
+      "url": "https://example-movers.ae/ar/movers-dubai/",
+      "name": "نقل اثاث دبي | شركة مثال",
+      "isPartOf": {
+        "@id": "https://example-movers.ae/#website"
+      },
+      "inLanguage": "ar"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://example-movers.ae/ar/movers-dubai/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "الرئيسية",
+          "item": "https://example-movers.ae/ar/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "نقل اثاث دبي"
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://example-movers.ae/#website",
+      "url": "https://example-movers.ae/",
+      "name": "Example Movers"
+    },
+    {
+      "@type": "MovingCompany",
+      "@id": "https://example-movers.ae/#org",
+      "name": "Example Movers",
+      "url": "https://example-movers.ae/",
+      "telephone": "+971500000000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Al Quoz 3",
+        "addressLocality": "Dubai",
+        "addressCountry": "AE"
+      },
+      "areaServed": [
+        "Dubai",
+        "Sharjah",
+        "Ajman"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8"
+      }
+    }
+  ]
+}
+
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "كم تكلفة نقل اثاث شقة في دبي؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "هل تقدمون خدمة التخزين؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نعم، لدينا مستودعات مكيفة."
+      }
+    }
+  ]
+}

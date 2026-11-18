@@ -1,0 +1,7 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Example Movers",
+  "url": "https://example-movers.ae/",
+  "logo": "https://example-movers.ae/logo.png"
+}

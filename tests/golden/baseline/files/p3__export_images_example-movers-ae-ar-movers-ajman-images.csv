@@ -1,0 +1,5 @@
+﻿file,src,alt,title,width,height,loading,fetchpriority,section,links_to,type,flags
+logo.png,https://example-movers.ae/wp-content/uploads/2024/01/logo.png,شعار شركة مثال لنقل الاثاث,,180,60,,,Header,https://example-movers.ae/ar/,img,legacy format (consider WebP/AVIF)
+IMG_2045.jpg,https://example-movers.ae/wp-content/uploads/2024/02/IMG_2045.jpg,(missing),,800,500,,,Main content,,img,alt missing; non-descriptive filename; legacy format (consider WebP/AVIF)
+movers-truck-dubai.webp,https://example-movers.ae/wp-content/uploads/2024/02/movers-truck-dubai.webp,شاحنة نقل اثاث مغلقة في عجمان,,600,400,lazy,,Main content,,img,
+fb.png,https://example-movers.ae/wp-content/uploads/fb.png,(missing),,,,,,Footer,https://www.facebook.com/examplemovers,img,alt missing; no width/height; legacy format (consider WebP/AVIF)

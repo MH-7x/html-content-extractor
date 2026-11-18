@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "كم تكلفة نقل اثاث شقة في دبي؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "هل تقدمون خدمة التخزين؟",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "نعم، لدينا مستودعات مكيفة."
+      }
+    }
+  ]
+}

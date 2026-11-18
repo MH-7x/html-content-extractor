@@ -1,0 +1,8 @@
+﻿anchor_text,anchor_source,href,resolved_url,type,rel,target,section,occurrences,flags
+Home,text,/,https://example-movers.ae/,internal,,,Header,1,
+نقل اثاث دبي,text,/ar/movers-dubai/,https://example-movers.ae/ar/movers-dubai/,internal,,,Header,2,
+Contact,text,/contact/,https://example-movers.ae/contact/,internal,,,Header,1,
+Movers in Dubai (Arabic),text,/ar/movers-dubai/,https://example-movers.ae/ar/movers-dubai/,internal,,,Main content,2,
+Movers in Sharjah (Arabic),text,/ar/movers-sharjah/,https://example-movers.ae/ar/movers-sharjah/,internal,,,Main content,1,
++971 50 000 0000,text,tel:+971500000000,tel:+971500000000,phone,,,Main content,1,
+WhatsApp,text,https://wa.me/971500000000,https://wa.me/971500000000,whatsapp,,,Main content,1,

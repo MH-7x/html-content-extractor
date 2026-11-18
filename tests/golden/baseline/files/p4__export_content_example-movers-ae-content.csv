@@ -1,0 +1,18 @@
+﻿order,section,type,level_or_tag,text,hidden
+1,Header,link,,Home,
+2,Header,link,,نقل اثاث دبي,
+3,Header,link,,Contact,
+4,Main content,heading,H1,"Furniture Movers in Dubai, Sharjah and Ajman",
+5,Main content,paragraph,p,"Example Movers is a moving company serving families and businesses across the northern Emirates. Our crews dismantle, wrap, load, transport and reassemble furniture so you can move without stress.",
+6,Main content,heading,H2,Where we work,
+7,Main content,list,,"Movers in Dubai (Arabic)
+Movers in Sharjah (Arabic)
+Ajman moves on request",
+8,Main content,heading,H2,How a move works,
+9,Main content,list,,"Free survey by phone or WhatsApp
+Fixed quote before moving day
+Packing, loading and transport
+Assembly and placement in your new home",
+10,Main content,paragraph,p,Call +971 50 000 0000 or message us on WhatsApp for a quote.,
+11,Main content,image,,https://example-movers.ae/team.jpg | alt: Example Movers team loading a truck,
+12,Footer,paragraph,p,© 2026 Example Movers,

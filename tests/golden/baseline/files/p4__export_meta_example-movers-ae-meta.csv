@@ -1,0 +1,6 @@
+﻿attribute,key,content,location
+charset,charset,utf-8,head
+name,viewport,"width=device-width, initial-scale=1",head
+name,description,"Example Movers moves homes, villas and offices across Dubai, Sharjah and Ajman with dismantling, packing, transport and assembly.",head
+property,og:title,Example Movers,head
+property,og:image,https://example-movers.ae/og.jpg,head

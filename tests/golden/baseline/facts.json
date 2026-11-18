@@ -1,0 +1,2667 @@
+{
+ "hooks": {
+  "#project-select": true,
+  "#proj-new": true,
+  "#proj-rename": true,
+  "#proj-backup": true,
+  "#proj-import": true,
+  "#proj-delete": true,
+  "#side-add": true,
+  "#side-all": true,
+  "#page-count": true,
+  "#page-filter": true,
+  "#page-list": true,
+  "#storage-note": true,
+  "#input-section": true,
+  "#input-title": true,
+  "#page-url": true,
+  "#html-input": true,
+  "#drop": true,
+  "#analyze-btn": true,
+  "#add-next-btn": true,
+  "#file-input": true,
+  "#sample-btn": true,
+  "#clear-btn": true,
+  "#cancel-edit-btn": true,
+  "#input-size": true,
+  "#input-error": true,
+  "#summary-bar": true,
+  "#sb-title": true,
+  "#sb-meta": true,
+  "#prev-btn": true,
+  "#pos-label": true,
+  "#next-btn": true,
+  "#edit-btn": true,
+  "#remove-btn": true,
+  "#report": true,
+  "#tablist": true,
+  "#tab-overview": true,
+  "#panel-overview": true,
+  "#pi-overview": true,
+  "#tab-meta": true,
+  "#panel-meta": true,
+  "#pi-meta": true,
+  "#tab-schema": true,
+  "#panel-schema": true,
+  "#pi-schema": true,
+  "#tab-headings": true,
+  "#panel-headings": true,
+  "#pi-headings": true,
+  "#tab-content": true,
+  "#panel-content": true,
+  "#pi-content": true,
+  "#tab-links": true,
+  "#panel-links": true,
+  "#pi-links": true,
+  "#tab-images": true,
+  "#panel-images": true,
+  "#pi-images": true,
+  "#tab-keywords": true,
+  "#panel-keywords": true,
+  "#pi-keywords": true,
+  "#tab-technical": true,
+  "#panel-technical": true,
+  "#pi-technical": true,
+  "#tab-aiprompt": true,
+  "#panel-aiprompt": true,
+  "#pi-aiprompt": true,
+  "#tab-export": true,
+  "#panel-export": true,
+  "#pi-export": true,
+  "#tc-overview": true,
+  "#tc-schema": true,
+  "#tc-headings": true,
+  "#tc-content": true,
+  "#tc-links": true,
+  "#tc-images": true,
+  "#bulk": true,
+  "#bulk-tablist": true,
+  "#bulk-project-name": true,
+  "#bulk-meta": true,
+  "#btab-compare": true,
+  "#bpanel-compare": true,
+  "#bpi-compare": true,
+  "#btab-dups": true,
+  "#bpanel-dups": true,
+  "#bpi-dups": true,
+  "#btab-sim": true,
+  "#bpanel-sim": true,
+  "#bpi-sim": true,
+  "#btab-links": true,
+  "#bpanel-links": true,
+  "#bpi-links": true,
+  "#btab-ai": true,
+  "#bpanel-ai": true,
+  "#bpi-ai": true,
+  "#btc-dups": true,
+  "#btc-sim": true,
+  "#btc-links": true,
+  "#dlg": true,
+  "#dlg-title": true,
+  "#dlg-msg": true,
+  "#dlg-field": true,
+  "#dlg-label": true,
+  "#dlg-input": true,
+  "#dlg-ok": true,
+  "#dlg-cancel": true,
+  "#toast": true
+ },
+ "steps": {
+  "hooks": null,
+  "initial": {
+   "projects": [
+    "My first project"
+   ],
+   "addVisible": true,
+   "storageNote": [
+    "Pages are saved in this browser. Use Backup to keep a copy or move it to another PC."
+   ],
+   "sideEmpty": [
+    "No pages yet. Paste a page’s HTML to start."
+   ]
+  },
+  "input-validation": {
+   "empty": [
+    "Paste some HTML first."
+   ],
+   "notHtml": [
+    "This does not look like HTML. Copy the <html> element from DevTools."
+   ],
+   "badUrl": [
+    "The page URL should start with https:// (or leave it empty)."
+   ],
+   "size": [
+    "0.1 KB · 1 lines"
+   ],
+   "cleared": [
+    "",
+    ""
+   ]
+  },
+  "add-next": {
+   "count": [
+    "1"
+   ],
+   "formCleared": true,
+   "stillAdd": true,
+   "toast": [
+    "Added page 1: نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والت…"
+   ]
+  },
+  "add-open-shortcut": {
+   "count": [
+    "2"
+   ],
+   "title": [
+    "نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب"
+   ],
+   "pos": [
+    "2 / 2"
+   ]
+  },
+  "add-same-url-replaces": {
+   "count": [
+    "2"
+   ],
+   "toast": [
+    "Replaced the existing page with the same URL (نقل اثاث الشارقة | شركة مثال لنقل الاثا…)"
+   ]
+  },
+  "remove-all-then-samples": {
+   "count": [
+    "0"
+   ],
+   "addVisible": true,
+   "afterSamples": [
+    "4"
+   ],
+   "sidebar": [
+    {
+     "t": "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "p": "/ar/movers-dubai/",
+     "b": "162 w 1 err6 warn 100% dup"
+    },
+    {
+     "t": "2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "p": "/ar/movers-sharjah/",
+     "b": "162 w 1 err6 warn 100% dup"
+    },
+    {
+     "t": "3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "p": "/ar/movers-ajman/",
+     "b": "179 w 1 err6 warn 87% dup"
+    },
+    {
+     "t": "4 Example Movers | Furniture Movers in Dubai, Sharjah & Ajman",
+     "p": "example-movers.ae",
+     "b": "90 w 2 warn"
+    }
+   ]
+  },
+  "bulk-header": {
+   "name": [
+    "My first project"
+   ],
+   "meta": [
+    "4 pages · 593 words of main content · 9 internal links between them"
+   ],
+   "counts": [
+    "",
+    "3",
+    "1"
+   ]
+  },
+  "bulk-compare": {
+   "cols": [
+    "#",
+    "Page",
+    "Title chars",
+    "Meta desc chars",
+    "H1",
+    "Words",
+    "H2s",
+    "Images",
+    "Internal links",
+    "External links",
+    "Schema",
+    "Indexable",
+    "Canonical",
+    "Max similarity",
+    "Errors",
+    "Warnings"
+   ],
+   "rows": [
+    [
+     "1",
+     "نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "53",
+     "98",
+     "نقل اثاث دبي مع الفك والتركيب",
+     "162",
+     "4",
+     "4",
+     "9",
+     "2",
+     "WebPage, BreadcrumbList, WebSite, MovingCompany, AggregateRating, FAQPage",
+     "yes",
+     "self",
+     "100",
+     "1",
+     "6"
+    ],
+    [
+     "2",
+     "نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "57",
+     "102",
+     "نقل اثاث الشارقة مع الفك والتركيب",
+     "162",
+     "4",
+     "4",
+     "9",
+     "2",
+     "WebPage, BreadcrumbList, WebSite, MovingCompany, AggregateRating, FAQPage",
+     "yes",
+     "self",
+     "100",
+     "1",
+     "6"
+    ],
+    [
+     "3",
+     "نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "55",
+     "100",
+     "نقل اثاث عجمان مع الفك والتركيب",
+     "179",
+     "4",
+     "4",
+     "9",
+     "2",
+     "WebPage, BreadcrumbList, WebSite, MovingCompany, AggregateRating, FAQPage",
+     "yes",
+     "self",
+     "87",
+     "1",
+     "6"
+    ],
+    [
+     "4",
+     "Example Movers | Furniture Movers in Dubai, Sharjah & Ajman",
+     "59",
+     "129",
+     "Furniture Movers in Dubai, Sharjah and Ajman",
+     "90",
+     "2",
+     "1",
+     "5",
+     "0",
+     "Organization",
+     "yes",
+     "self",
+     "0",
+     "0",
+     "2"
+    ]
+   ],
+   "sorts": {
+    "#": [
+     "1,2,3,4",
+     "4,3,2,1",
+     "descending"
+    ],
+    "Page": [
+     "4,2,1,3",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Title chars": [
+     "1,3,2,4",
+     "4,2,3,1",
+     "descending"
+    ],
+    "Meta desc chars": [
+     "1,3,2,4",
+     "4,2,3,1",
+     "descending"
+    ],
+    "H1": [
+     "4,2,1,3",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Words": [
+     "4,1,2,3",
+     "3,1,2,4",
+     "descending"
+    ],
+    "H2s": [
+     "4,3,1,2",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Images": [
+     "4,3,1,2",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Internal links": [
+     "4,3,1,2",
+     "3,1,2,4",
+     "descending"
+    ],
+    "External links": [
+     "4,3,1,2",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Schema": [
+     "4,3,1,2",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Indexable": [
+     "3,1,2,4",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Canonical": [
+     "3,1,2,4",
+     "3,1,2,4",
+     "descending"
+    ],
+    "Max similarity": [
+     "4,3,1,2",
+     "1,2,3,4",
+     "descending"
+    ],
+    "Errors": [
+     "4,1,2,3",
+     "1,2,3,4",
+     "descending"
+    ],
+    "Warnings": [
+     "4,1,2,3",
+     "1,2,3,4",
+     "descending"
+    ]
+   },
+   "csvName": "My-first-project-comparison.csv",
+   "copy": [
+    {
+     "label": "Copy table",
+     "tip": "Copied"
+    }
+   ],
+   "openedPage": [
+    "نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب"
+   ]
+  },
+  "bulk-dups": {
+   "stats": [
+    "0Duplicate titles",
+    "0Duplicate descriptions",
+    "0Duplicate H1s",
+    "0Shared canonicals",
+    "0High-risk overlaps",
+    "3Overlaps to check"
+   ],
+   "groups": 0,
+   "cannibalRows": 3,
+   "cannibal": [
+    "Checkdiffer only by the words on the right 1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب80%نقل اثاث شركة مثال لنقل الاثاث الفك والتركيبدبيالشارقة",
+    "Checkdiffer only by the words on the right 1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب80%نقل اثاث شركة مثال لنقل الاثاث الفك والتركيبدبيعجمان",
+    "Checkdiffer only by the words on the right 2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب80%نقل اثاث شركة مثال لنقل الاثاث الفك والتركيبالشارقةعجمان"
+   ],
+   "sections": [
+    "Duplicate title tags",
+    "Duplicate meta descriptions",
+    "Duplicate H1 headings",
+    "Keyword cannibalization check"
+   ]
+  },
+  "bulk-sim": {
+   "matrix": [
+    "—",
+    "100",
+    "87",
+    "0",
+    "100",
+    "—",
+    "87",
+    "0",
+    "87",
+    "87",
+    "—",
+    "0",
+    "0",
+    "0",
+    "0",
+    "—"
+   ],
+   "pairs": {
+    "0": [
+     "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب↔2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب Template 100% Raw 63% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: دبي dubai الشارقة sharjah Show repeated sentencesنقل اثاث دبي مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في دبي لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق دبي.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل دبي ومن دبي إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في دبي؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+     "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب↔3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب Template 87% Raw 56% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: دبي dubai عجمان ajman Show repeated sentencesنقل اثاث دبي مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في دبي لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق دبي.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل دبي ومن دبي إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في دبي؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+     "2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب↔3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب Template 87% Raw 56% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: الشارقة sharjah عجمان ajman Show repeated sentencesنقل اثاث الشارقة مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في الشارقة لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق الشارقة.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل الشارقة ومن الشارقة إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في الشارقة؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+     "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب↔4 Example Movers | Furniture Movers in Dubai, Sharjah & Ajman Template 0% Raw 0% · 0 identical sentences · 0 identical apart from the hidden words (of 6) Words hidden for template match: نقل اثاث دبي شركة مثال لنقل الاثاث الفك",
+     "2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب↔4 Example Movers | Furniture Movers in Dubai, Sharjah & Ajman Template 0% Raw 0% · 0 identical sentences · 0 identical apart from the hidden words (of 6) Words hidden for template match: نقل اثاث الشارقة شركة مثال لنقل الاثاث الفك",
+     "3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب↔4 Example Movers | Furniture Movers in Dubai, Sharjah & Ajman Template 0% Raw 0% · 0 identical sentences · 0 identical apart from the hidden words (of 6) Words hidden for template match: نقل اثاث عجمان شركة مثال لنقل الاثاث الفك"
+    ],
+    "50": [
+     "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب↔2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب Template 100% Raw 63% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: دبي dubai الشارقة sharjah Show repeated sentencesنقل اثاث دبي مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في دبي لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق دبي.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل دبي ومن دبي إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في دبي؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+     "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب↔3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب Template 87% Raw 56% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: دبي dubai عجمان ajman Show repeated sentencesنقل اثاث دبي مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في دبي لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق دبي.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل دبي ومن دبي إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في دبي؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+     "2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب↔3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب Template 87% Raw 56% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: الشارقة sharjah عجمان ajman Show repeated sentencesنقل اثاث الشارقة مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في الشارقة لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق الشارقة.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل الشارقة ومن الشارقة إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في الشارقة؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة."
+    ],
+    "80": [
+     "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب↔2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب Template 100% Raw 63% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: دبي dubai الشارقة sharjah Show repeated sentencesنقل اثاث دبي مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في دبي لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق دبي.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل دبي ومن دبي إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في دبي؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+     "1 نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب↔3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب Template 87% Raw 56% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: دبي dubai عجمان ajman Show repeated sentencesنقل اثاث دبي مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في دبي لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق دبي.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل دبي ومن دبي إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في دبي؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة.",
+     "2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب↔3 نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب Template 87% Raw 56% · 2 identical sentences · 7 identical apart from the hidden words (of 7) Words hidden for template match: الشارقة sharjah عجمان ajman Show repeated sentencesنقل اثاث الشارقة مع الفك والتركيبشركة مثال لنقل الاثاث هي خيارك الأول في الشارقة لنقل اثاث المنازل والشقق والفلل والمكاتب.نقدم خدمة متكاملة تشمل الفك والتغليف والنقل والتركيب بأيدي فريق مدرب وبأسعار مناسبة لكل العملاء في جميع مناطق الشارقة.نوفر لعملائنا مجموعة واسعة من الخدمات التي تغطي كل احتياجات النقل داخل الشارقة ومن الشارقة إلى باقي الإمارات.يعمل فريقنا على مدار الأسبوع ويستخدم مواد تغليف عالية الجودة لحماية أثاثك.كم تكلفة نقل اثاث شقة في الشارقة؟تبدأ الأسعار من 800 درهم حسب حجم الشقة والمسافة."
+    ]
+   }
+  },
+  "bulk-links": {
+   "stats": [
+    "4Pages",
+    "9Links between them",
+    "1Orphans (no links in)",
+    "2No body-content links in",
+    "0Pages without URL"
+   ],
+   "rows": [
+    [
+     "1",
+     "نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "3",
+     "1",
+     "3",
+     "2",
+     "",
+     "linked"
+    ],
+    [
+     "2",
+     "نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "3",
+     "1",
+     "2",
+     "2",
+     "",
+     "linked"
+    ],
+    [
+     "3",
+     "نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب",
+     "2",
+     "0",
+     "2",
+     "2",
+     "",
+     "nav"
+    ],
+    [
+     "4",
+     "Example Movers | Furniture Movers in Dubai, Sharjah & Ajman",
+     "0",
+     "0",
+     "0",
+     "2",
+     "",
+     "orphan"
+    ]
+   ],
+   "matrix": [
+    "—",
+    "1",
+    "1",
+    "",
+    "1",
+    "—",
+    "1",
+    "",
+    "1",
+    "1",
+    "—",
+    "",
+    "2",
+    "1",
+    "",
+    "—"
+   ],
+   "unknown": [
+    "https://example-movers.ae/ar/91 2 3شعار شركة مثال لنقل الاثاث · الرئيسية",
+    "https://example-movers.ae/ar/contact/31 2 3اتصل بنا",
+    "https://example-movers.ae/movers-dubai/31 2 3English",
+    "https://example-movers.ae/ar/about/31 2 3اقرأ المزيد",
+    "https://example-movers.ae/contact/14Contact"
+   ]
+  },
+  "bulk-ai": {
+   "goals": [
+    "differentiate",
+    "metas",
+    "linking",
+    "cannibal"
+   ],
+   "langs": [
+    "same",
+    "en",
+    "ar"
+   ],
+   "count": [
+    "2,932 characters"
+   ],
+   "dlName": "My-first-project-prompt-cannibal.md",
+   "copy": [
+    {
+     "label": "Copy project AI prompt",
+     "tip": "Copied"
+    }
+   ]
+  },
+  "p1-open": {
+   "title": [
+    "نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب"
+   ],
+   "meta": "https://example-movers.ae/ar/movers-dubai/ · 8.4 KB HTML · ",
+   "pos": [
+    "1 / 4"
+   ],
+   "prevDisabled": true,
+   "nextDisabled": false,
+   "tcounts": [
+    "7",
+    "10",
+    "7",
+    "30",
+    "16",
+    "4"
+   ]
+  },
+  "p1-overview": {
+   "stats": [
+    [
+     "162",
+     "Words (main)",
+     "197 on whole page"
+    ],
+    [
+     "1 min",
+     "Reading time",
+     "23 sentences"
+    ],
+    [
+     "1",
+     "H1 headings",
+     "7 headings total"
+    ],
+    [
+     "9",
+     "Internal links",
+     "2 external · 3 WhatsApp/phone"
+    ],
+    [
+     "4",
+     "Images",
+     "2 missing alt"
+    ],
+    [
+     "10",
+     "Schema types",
+     "WebPage, BreadcrumbList, ListItem"
+    ],
+    [
+     "30",
+     "Content blocks",
+     "6 paragraphs · 2 lists"
+    ],
+    [
+     "15.3%",
+     "Text / HTML",
+     "8.4 KB of HTML"
+    ]
+   ],
+   "cards": [
+    "✕1Errors",
+    "!6Warnings",
+    "i8Notices",
+    "✓9Passed"
+   ],
+   "filters": {
+    "all": [
+     "✕ Schema MovingCompany: aggregateRating needs reviewCount or ratingCount",
+     "! Content Thin main content: 162 words",
+     "! Images 2 of 4 images have no alt attribute",
+     "! Links 1 link(s) without any anchor text",
+     "! Schema WebPage: Missing recommended WebPage properties: description",
+     "! Schema MovingCompany: Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+     "! Schema FAQPage: 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\"",
+     "i International hreflang set without x-default",
+     "i Headings 1 heading level skip(s)H4: لماذا تختارنا؟",
+     "i Headings 1 heading(s) inside hidden elementsH2: نقل اثاث دبي (hidden on desktop)",
+     "i Content 1 content block(s) are hidden (display:none, device-hidden, etc.)",
+     "i Images 1 image(s) without width/height (layout shift risk)",
+     "i Images 3 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Links 1 link(s) with generic anchor text (\"read more\", \"click here\"…)",
+     "i Social Missing Open Graph: og:image",
+     "✓ Meta Title length OK (53 chars, ~360px)",
+     "✓ Meta Meta description length OK (98 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/ar/movers-dubai/",
+     "✓ Indexing Indexable (robots: index, follow, max-image-preview:large)",
+     "✓ Technical Language declared: ar (dir=rtl)",
+     "✓ International 2 hreflang alternates",
+     "✓ Headings Exactly one H1نقل اثاث دبي مع الفك والتركيب",
+     "✓ Links 9 internal links, 2 external",
+     "✓ Schema Structured data types: WebPage, BreadcrumbList, ListItem, WebSite, MovingCompany, PostalAddress, AggregateRating, FAQPage, Question, Answer"
+    ],
+    "error": [
+     "✕ Schema MovingCompany: aggregateRating needs reviewCount or ratingCount"
+    ],
+    "warning": [
+     "! Content Thin main content: 162 words",
+     "! Images 2 of 4 images have no alt attribute",
+     "! Links 1 link(s) without any anchor text",
+     "! Schema WebPage: Missing recommended WebPage properties: description",
+     "! Schema MovingCompany: Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+     "! Schema FAQPage: 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\""
+    ],
+    "notice": [
+     "i International hreflang set without x-default",
+     "i Headings 1 heading level skip(s)H4: لماذا تختارنا؟",
+     "i Headings 1 heading(s) inside hidden elementsH2: نقل اثاث دبي (hidden on desktop)",
+     "i Content 1 content block(s) are hidden (display:none, device-hidden, etc.)",
+     "i Images 1 image(s) without width/height (layout shift risk)",
+     "i Images 3 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Links 1 link(s) with generic anchor text (\"read more\", \"click here\"…)",
+     "i Social Missing Open Graph: og:image"
+    ],
+    "pass": [
+     "✓ Meta Title length OK (53 chars, ~360px)",
+     "✓ Meta Meta description length OK (98 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/ar/movers-dubai/",
+     "✓ Indexing Indexable (robots: index, follow, max-image-preview:large)",
+     "✓ Technical Language declared: ar (dir=rtl)",
+     "✓ International 2 hreflang alternates",
+     "✓ Headings Exactly one H1نقل اثاث دبي مع الفك والتركيب",
+     "✓ Links 9 internal links, 2 external",
+     "✓ Schema Structured data types: WebPage, BreadcrumbList, ListItem, WebSite, MovingCompany, PostalAddress, AggregateRating, FAQPage, Question, Answer"
+    ]
+   },
+   "gotoTiles": 8
+  },
+  "p1-meta": {
+   "kv": [
+    "Titleنقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب 53 chars · ~360px of 580px",
+    "Meta descriptionشركة مثال لنقل الاثاث في دبي: فك وتركيب وتغليف ونقل آمن للمنازل والمكاتب بأسعار مناسبة. اتصل الآن. 98 chars · ~479px of 920px",
+    "Canonicalhttps://example-movers.ae/ar/movers-dubai/",
+    "Meta robotsindex, follow, max-image-preview:large",
+    "Viewportwidth=device-width, initial-scale=1",
+    "CharsetUTF-8",
+    "HTML lang / dirar · dir=rtl",
+    "AuthorNot set",
+    "GeneratorWordPress 6.6.1 | Elementor 3.23.4; features: e_optimized_css_loading",
+    "Theme colorNot set",
+    "Favicon / icons https://example-movers.ae/wp-content/uploads/2024/01/fav-32x32.png icon 32x32",
+    "ManifestNot set"
+   ],
+   "tables": [
+    6,
+    1,
+    2,
+    1,
+    14,
+    6
+   ],
+   "sections": [
+    "Essential tags",
+    "Open Graph (Facebook, WhatsApp, LinkedIn)",
+    "Twitter / X card",
+    "Hreflang alternates",
+    "Site verification tags",
+    "All meta tags (14)",
+    "All <link> tags (6)"
+   ]
+  },
+  "p1-schema": {
+   "cards": 2,
+   "entities": 5,
+   "types": [
+    "WebPage",
+    "BreadcrumbList",
+    "WebSite",
+    "MovingCompany",
+    "FAQPage"
+   ],
+   "checks": [
+    "! Missing recommended WebPage properties: description",
+    "✓ All commonly recommended BreadcrumbList properties present",
+    "✓ 2 breadcrumb items look complete",
+    "✓ All commonly recommended WebSite properties present",
+    "! Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+    "✕ aggregateRating needs reviewCount or ratingCount",
+    "✓ All commonly recommended FAQPage properties present",
+    "✓ 2 FAQ questions, all with answers",
+    "! 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\""
+   ],
+   "sections": [
+    "Types found",
+    "JSON-LD (2 blocks)"
+   ]
+  },
+  "p1-headings": {
+   "lvl": [
+    "1H1",
+    "4H2",
+    "1H3",
+    "1H4",
+    "0H5",
+    "0H6"
+   ],
+   "rows": [
+    "H1 نقل اثاث دبي مع الفك والتركيب 29 ch",
+    "H2 نقل اثاث دبي hidden on desktop 12 ch",
+    "H2 خدمات نقل الاثاث في دبي 23 ch",
+    "H4 لماذا تختارنا؟ skipped H314 ch",
+    "H2 أسعار نقل الاثاث في دبي 23 ch",
+    "H2 الأسئلة الشائعة 15 ch",
+    "H3 تواصل معنا Footer 10 ch"
+   ],
+   "mainOnly": [
+    "H1 نقل اثاث دبي مع الفك والتركيب 29 ch",
+    "H2 نقل اثاث دبي hidden on desktop 12 ch",
+    "H2 خدمات نقل الاثاث في دبي 23 ch",
+    "H4 لماذا تختارنا؟ skipped H314 ch",
+    "H2 أسعار نقل الاثاث في دبي 23 ch",
+    "H2 الأسئلة الشائعة 15 ch"
+   ]
+  },
+  "p1-content": {
+   "grouped": {
+    "meta": [
+     "30 blocks · 198 words shown"
+    ],
+    "blocks": 30,
+    "groups": [
+     "Header",
+     "Main content",
+     "Footer"
+    ]
+   },
+   "order": {
+    "meta": [
+     "30 blocks · 198 words shown"
+    ],
+    "blocks": 30,
+    "dividers": 3
+   },
+   "no_header": 27,
+   "no_nav": 30,
+   "no_main": 9,
+   "no_aside": 30,
+   "no_footer": 24,
+   "noHidden": 29,
+   "noTags": 0
+  },
+  "p1-links": {
+   "stats": [
+    "16Total",
+    "13Unique URLs",
+    "9Internal",
+    "2External",
+    "1WhatsApp",
+    "2Phone",
+    "1Email",
+    "1Nofollow",
+    "3With issues"
+   ],
+   "types": {
+    "all": 16,
+    "internal": 9,
+    "external": 2,
+    "anchor": 1,
+    "whatsapp": 1,
+    "phone": 2,
+    "email": 1
+   },
+   "regions": {
+    "all": 16,
+    "header": 8,
+    "nav": 0,
+    "main": 3,
+    "aside": 0,
+    "footer": 5
+   },
+   "all": 16,
+   "allRows": [
+    "شعار شركة مثال لنقل الاثاثfrom image alt | https://example-movers.ae/ar/ ×3 | Internal | — | Header | ",
+    "الرئيسية | https://example-movers.ae/ar/ ×3 | Internal | — | Header | ",
+    "نقل اثاث دبي | https://example-movers.ae/ar/movers-dubai/ | Internal | — | Header | ",
+    "نقل اثاث الشارقة | https://example-movers.ae/ar/movers-sharjah/ | Internal | — | Header | ",
+    "نقل اثاث عجمان | https://example-movers.ae/ar/movers-ajman/ | Internal | — | Header | ",
+    "اتصل بنا | https://example-movers.ae/ar/contact/ | Internal | — | Header | ",
+    "English | https://example-movers.ae/movers-dubai/ | Internal | — | Header | ",
+    "واتساب | https://wa.me/971500000000 | WhatsApp | — | Header | ",
+    "الرئيسية | https://example-movers.ae/ar/ ×3 | Internal | — | Main content | ",
+    "اتصل الآن | — ×2 | Phone | — | Main content | ",
+    "اقرأ المزيد | https://example-movers.ae/ar/about/ | Internal | — | Main content | generic anchor",
+    "+971 50 000 0000 | — ×2 | Phone | — | Footer | ",
+    "info@example-movers.ae | — | Email | — | Footer | ",
+    "(none) | https://www.facebook.com/examplemovers | External | _blank | Footer | no anchor textno noopener",
+    "شريكنا | https://partner-site.com/ | External | nofollow sponsored | Footer | ",
+    "أعلى الصفحة | https://example-movers.ae/ar/movers-dubai/# | #Anchor | — | Footer | empty/# href"
+   ],
+   "q": 3,
+   "issuesOnly": 3,
+   "domains": [
+    "facebook.com",
+    "partner-site.com"
+   ]
+  },
+  "p1-images": {
+   "stats": [
+    "4Images",
+    "2With alt",
+    "2Alt missing",
+    "0Empty alt",
+    "1No dimensions",
+    "1Lazy loaded",
+    "0Backgrounds"
+   ],
+   "filters": {
+    "all": 4,
+    "withalt": 2,
+    "missing": 2,
+    "empty": 0,
+    "nodims": 1,
+    "bg": 0
+   },
+   "noPrevCols": [
+    "#",
+    "File",
+    "Alt text",
+    "Size",
+    "Loading",
+    "Section",
+    "Flags"
+   ]
+  },
+  "p1-keywords": {
+   "grams": [
+    "دبي106.2%",
+    "نقل74.3%",
+    "الاثاث63.7%",
+    "اثاث53.1%",
+    "درهم42.5%",
+    "لنقل31.9%",
+    "الفك21.2%",
+    "والتركيب21.2%",
+    "الاسبوع21.2%",
+    "تغليف21.2%",
+    "عالية21.2%",
+    "الجودة21.2%",
+    "مغلقة21.2%",
+    "شقة21.2%",
+    "الرئيسية10.6%",
+    "شركة10.6%",
+    "مثال10.6%",
+    "خيارك10.6%",
+    "الاول10.6%",
+    "المنازل10.6%",
+    "والشقق10.6%",
+    "والفلل10.6%",
+    "والمكاتب10.6%",
+    "نقدم10.6%",
+    "خدمة10.6%",
+    "متكاملة10.6%",
+    "تشمل10.6%",
+    "والتغليف10.6%",
+    "والنقل10.6%",
+    "بايدي10.6%",
+    "نقل اثاث44.9%",
+    "اثاث دبي33.7%",
+    "نقل الاثاث33.7%",
+    "لنقل الاثاث22.5%",
+    "عالية الجودة22.5%",
+    "نقل اثاث دبي35.6%",
+    "الاثاث في دبي23.7%"
+   ],
+   "stats": [
+    "162Words (main)",
+    "197Words (all)",
+    "116Unique words",
+    "23Sentences",
+    "7Avg words / sentence",
+    "0Sentences > 25 words",
+    "6Paragraphs (<p>)",
+    "4Other text blocks",
+    "1 minReading time",
+    "Arabic (100% Arabic)Script"
+   ],
+   "check": [
+    "0times in main content 0%density ! Title tag! Meta description! H1! Subheadings (H2–H6): 0 of 6! First paragraph✓ URL / slug! Image alt text: 0 images! Open Graph title! Internal link anchors"
+   ],
+   "clicked": [
+    "دبي",
+    [
+     "10times in main content 6.2%density ✓ Title tag✓ Meta description✓ H1✓ Subheadings (H2–H6): 3 of 6✓ First paragraph! URL / slug✓ Image alt text: 1 images✓ Open Graph title✓ Internal link anchors"
+    ]
+   ]
+  },
+  "p1-technical": {
+   "sections": [
+    "Detected platform, plugins and tracking",
+    "<html> attributes",
+    "Scripts (2 external, 3 inline)",
+    "Stylesheets (1)",
+    "Resource hints",
+    "HTML comments (1)"
+   ],
+   "rows": [
+    "WordPressCMSgenerator: WordPress 6.6.1 | Elementor 3.23.4; features: e_optimized_css_loading",
+    "Yoast SEOSEO pluginYoast comment / schema class",
+    "ElementorPage builderelementor classes",
+    "Astra themeThemeastra assets",
+    "jQueryJS libraryjquery script",
+    "Google Analytics 4TrackingG-ABC1234XYZ",
+    "Google Ads tagTrackingAW-123456789",
+    "inline 1.0 KB: {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://example-movers.ae/ar/movers-dubai/\",\"url\":\"https://example-movers.ae/ar/movers-duba application/ld+json—head",
+    "inline 0.3 KB: {\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"كم تكلفة نقل اثاث شقة في دبي؟\",\"acceptedAnswer\":{\"@type\":\"Answer\",\" application/ld+json—head",
+    "https://www.googletagmanager.com/gtag/js?id=G-ABC1234XYZ jsasynchead",
+    "inline 0.2 KB: window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ABC1234XYZ');gtag('config','AW-123456789 js—head",
+    "https://example-movers.ae/wp-includes/js/jquery/jquery.min.js jsblockinghead",
+    "preconnecthttps://fonts.gstatic.com/"
+   ]
+  },
+  "p1-aiprompt": {
+   "goals": [
+    "rewrite",
+    "brief",
+    "audit",
+    "meta",
+    "faq",
+    "localize",
+    "unique"
+   ],
+   "langs": [
+    "same",
+    "en",
+    "ar"
+   ],
+   "notes": {
+    "same": [
+     "Includes 2 similar page(s) from this project."
+    ],
+    "en": [
+     "Includes 2 similar page(s) from this project."
+    ],
+    "ar": [
+     "Includes 2 similar page(s) from this project."
+    ]
+   },
+   "count": [
+    "4,426 characters"
+   ],
+   "dlName": "example-movers-ae-ar-movers-dubai-prompt-rewrite.md"
+  },
+  "p1-export": {
+   "names": {
+    "main-md": "example-movers-ae-ar-movers-dubai-content.md",
+    "full-md": "example-movers-ae-ar-movers-dubai-seo-report.md",
+    "json": "example-movers-ae-ar-movers-dubai-report.json",
+    "links": "example-movers-ae-ar-movers-dubai-links.csv",
+    "images": "example-movers-ae-ar-movers-dubai-images.csv",
+    "headings": "example-movers-ae-ar-movers-dubai-headings.csv",
+    "meta": "example-movers-ae-ar-movers-dubai-meta.csv",
+    "content": "example-movers-ae-ar-movers-dubai-content.csv"
+   },
+   "previewNote": [
+    ""
+   ],
+   "printBtn": 1
+  },
+  "p1-copy": {
+   "meta": [
+    {
+     "label": "Copy title + description",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy as CSV",
+     "tip": "Copied"
+    }
+   ],
+   "schema": [
+    {
+     "label": "Copy all JSON-LD",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy JSON-LD block 1",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy JSON-LD block 2",
+     "tip": "Copied"
+    }
+   ],
+   "headings": [
+    {
+     "label": "Copy outline",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy as Markdown",
+     "tip": "Copied"
+    }
+   ],
+   "content": [
+    {
+     "label": "Copy as Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy plain text",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy Header as Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy Main content as Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy Footer as Markdown",
+     "tip": "Copied"
+    }
+   ],
+   "links": [
+    {
+     "label": "Copy URLs",
+     "tip": "Copied"
+    }
+   ],
+   "images": [
+    {
+     "label": "Copy alt texts",
+     "tip": "Copied"
+    }
+   ],
+   "export": [
+    {
+     "label": "Copy main content Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy full report Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy JSON report",
+     "tip": "Copied"
+    }
+   ],
+   "aiprompt": [
+    {
+     "label": "Copy AI prompt",
+     "tip": "Copied"
+    }
+   ]
+  },
+  "p2-open": {
+   "title": [
+    "نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب"
+   ],
+   "meta": "https://example-movers.ae/ar/movers-sharjah/ · 8.6 KB HTML · ",
+   "pos": [
+    "2 / 4"
+   ],
+   "prevDisabled": false,
+   "nextDisabled": false,
+   "tcounts": [
+    "7",
+    "10",
+    "7",
+    "30",
+    "16",
+    "4"
+   ]
+  },
+  "p2-overview": {
+   "stats": [
+    [
+     "162",
+     "Words (main)",
+     "197 on whole page"
+    ],
+    [
+     "1 min",
+     "Reading time",
+     "23 sentences"
+    ],
+    [
+     "1",
+     "H1 headings",
+     "7 headings total"
+    ],
+    [
+     "9",
+     "Internal links",
+     "2 external · 3 WhatsApp/phone"
+    ],
+    [
+     "4",
+     "Images",
+     "2 missing alt"
+    ],
+    [
+     "10",
+     "Schema types",
+     "WebPage, BreadcrumbList, ListItem"
+    ],
+    [
+     "30",
+     "Content blocks",
+     "6 paragraphs · 2 lists"
+    ],
+    [
+     "15.7%",
+     "Text / HTML",
+     "8.6 KB of HTML"
+    ]
+   ],
+   "cards": [
+    "✕1Errors",
+    "!6Warnings",
+    "i8Notices",
+    "✓9Passed"
+   ],
+   "filters": {
+    "all": [
+     "✕ Schema MovingCompany: aggregateRating needs reviewCount or ratingCount",
+     "! Content Thin main content: 162 words",
+     "! Images 2 of 4 images have no alt attribute",
+     "! Links 1 link(s) without any anchor text",
+     "! Schema WebPage: Missing recommended WebPage properties: description",
+     "! Schema MovingCompany: Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+     "! Schema FAQPage: 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\"",
+     "i International hreflang set without x-default",
+     "i Headings 1 heading level skip(s)H4: لماذا تختارنا؟",
+     "i Headings 1 heading(s) inside hidden elementsH2: نقل اثاث الشارقة (hidden on desktop)",
+     "i Content 1 content block(s) are hidden (display:none, device-hidden, etc.)",
+     "i Images 1 image(s) without width/height (layout shift risk)",
+     "i Images 3 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Links 1 link(s) with generic anchor text (\"read more\", \"click here\"…)",
+     "i Social Missing Open Graph: og:image",
+     "✓ Meta Title length OK (57 chars, ~382px)",
+     "✓ Meta Meta description length OK (102 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/ar/movers-sharjah/",
+     "✓ Indexing Indexable (robots: index, follow, max-image-preview:large)",
+     "✓ Technical Language declared: ar (dir=rtl)",
+     "✓ International 2 hreflang alternates",
+     "✓ Headings Exactly one H1نقل اثاث الشارقة مع الفك والتركيب",
+     "✓ Links 9 internal links, 2 external",
+     "✓ Schema Structured data types: WebPage, BreadcrumbList, ListItem, WebSite, MovingCompany, PostalAddress, AggregateRating, FAQPage, Question, Answer"
+    ],
+    "error": [
+     "✕ Schema MovingCompany: aggregateRating needs reviewCount or ratingCount"
+    ],
+    "warning": [
+     "! Content Thin main content: 162 words",
+     "! Images 2 of 4 images have no alt attribute",
+     "! Links 1 link(s) without any anchor text",
+     "! Schema WebPage: Missing recommended WebPage properties: description",
+     "! Schema MovingCompany: Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+     "! Schema FAQPage: 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\""
+    ],
+    "notice": [
+     "i International hreflang set without x-default",
+     "i Headings 1 heading level skip(s)H4: لماذا تختارنا؟",
+     "i Headings 1 heading(s) inside hidden elementsH2: نقل اثاث الشارقة (hidden on desktop)",
+     "i Content 1 content block(s) are hidden (display:none, device-hidden, etc.)",
+     "i Images 1 image(s) without width/height (layout shift risk)",
+     "i Images 3 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Links 1 link(s) with generic anchor text (\"read more\", \"click here\"…)",
+     "i Social Missing Open Graph: og:image"
+    ],
+    "pass": [
+     "✓ Meta Title length OK (57 chars, ~382px)",
+     "✓ Meta Meta description length OK (102 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/ar/movers-sharjah/",
+     "✓ Indexing Indexable (robots: index, follow, max-image-preview:large)",
+     "✓ Technical Language declared: ar (dir=rtl)",
+     "✓ International 2 hreflang alternates",
+     "✓ Headings Exactly one H1نقل اثاث الشارقة مع الفك والتركيب",
+     "✓ Links 9 internal links, 2 external",
+     "✓ Schema Structured data types: WebPage, BreadcrumbList, ListItem, WebSite, MovingCompany, PostalAddress, AggregateRating, FAQPage, Question, Answer"
+    ]
+   },
+   "gotoTiles": 8
+  },
+  "p2-meta": {
+   "kv": [
+    "Titleنقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب 57 chars · ~382px of 580px",
+    "Meta descriptionشركة مثال لنقل الاثاث في الشارقة: فك وتركيب وتغليف ونقل آمن للمنازل والمكاتب بأسعار مناسبة. اتصل الآن. 102 chars · ~495px of 920px",
+    "Canonicalhttps://example-movers.ae/ar/movers-sharjah/",
+    "Meta robotsindex, follow, max-image-preview:large",
+    "Viewportwidth=device-width, initial-scale=1",
+    "CharsetUTF-8",
+    "HTML lang / dirar · dir=rtl",
+    "AuthorNot set",
+    "GeneratorWordPress 6.6.1 | Elementor 3.23.4; features: e_optimized_css_loading",
+    "Theme colorNot set",
+    "Favicon / icons https://example-movers.ae/wp-content/uploads/2024/01/fav-32x32.png icon 32x32",
+    "ManifestNot set"
+   ],
+   "tables": [
+    6,
+    1,
+    2,
+    1,
+    14,
+    6
+   ],
+   "sections": [
+    "Essential tags",
+    "Open Graph (Facebook, WhatsApp, LinkedIn)",
+    "Twitter / X card",
+    "Hreflang alternates",
+    "Site verification tags",
+    "All meta tags (14)",
+    "All <link> tags (6)"
+   ]
+  },
+  "p2-schema": {
+   "cards": 2,
+   "entities": 5,
+   "types": [
+    "WebPage",
+    "BreadcrumbList",
+    "WebSite",
+    "MovingCompany",
+    "FAQPage"
+   ],
+   "checks": [
+    "! Missing recommended WebPage properties: description",
+    "✓ All commonly recommended BreadcrumbList properties present",
+    "✓ 2 breadcrumb items look complete",
+    "✓ All commonly recommended WebSite properties present",
+    "! Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+    "✕ aggregateRating needs reviewCount or ratingCount",
+    "✓ All commonly recommended FAQPage properties present",
+    "✓ 2 FAQ questions, all with answers",
+    "! 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\""
+   ],
+   "sections": [
+    "Types found",
+    "JSON-LD (2 blocks)"
+   ]
+  },
+  "p2-headings": {
+   "lvl": [
+    "1H1",
+    "4H2",
+    "1H3",
+    "1H4",
+    "0H5",
+    "0H6"
+   ],
+   "rows": [
+    "H1 نقل اثاث الشارقة مع الفك والتركيب 33 ch",
+    "H2 نقل اثاث الشارقة hidden on desktop 16 ch",
+    "H2 خدمات نقل الاثاث في الشارقة 27 ch",
+    "H4 لماذا تختارنا؟ skipped H314 ch",
+    "H2 أسعار نقل الاثاث في الشارقة 27 ch",
+    "H2 الأسئلة الشائعة 15 ch",
+    "H3 تواصل معنا Footer 10 ch"
+   ],
+   "mainOnly": [
+    "H1 نقل اثاث الشارقة مع الفك والتركيب 33 ch",
+    "H2 نقل اثاث الشارقة hidden on desktop 16 ch",
+    "H2 خدمات نقل الاثاث في الشارقة 27 ch",
+    "H4 لماذا تختارنا؟ skipped H314 ch",
+    "H2 أسعار نقل الاثاث في الشارقة 27 ch",
+    "H2 الأسئلة الشائعة 15 ch"
+   ]
+  },
+  "p2-content": {
+   "grouped": {
+    "meta": [
+     "30 blocks · 198 words shown"
+    ],
+    "blocks": 30,
+    "groups": [
+     "Header",
+     "Main content",
+     "Footer"
+    ]
+   },
+   "order": {
+    "meta": [
+     "30 blocks · 198 words shown"
+    ],
+    "blocks": 30,
+    "dividers": 3
+   },
+   "no_header": 27,
+   "no_nav": 30,
+   "no_main": 9,
+   "no_aside": 30,
+   "no_footer": 24,
+   "noHidden": 29,
+   "noTags": 0
+  },
+  "p2-links": {
+   "stats": [
+    "16Total",
+    "13Unique URLs",
+    "9Internal",
+    "2External",
+    "1WhatsApp",
+    "2Phone",
+    "1Email",
+    "1Nofollow",
+    "3With issues"
+   ],
+   "types": {
+    "all": 16,
+    "internal": 9,
+    "external": 2,
+    "anchor": 1,
+    "whatsapp": 1,
+    "phone": 2,
+    "email": 1
+   },
+   "regions": {
+    "all": 16,
+    "header": 8,
+    "nav": 0,
+    "main": 3,
+    "aside": 0,
+    "footer": 5
+   },
+   "all": 16,
+   "allRows": [
+    "شعار شركة مثال لنقل الاثاثfrom image alt | https://example-movers.ae/ar/ ×3 | Internal | — | Header | ",
+    "الرئيسية | https://example-movers.ae/ar/ ×3 | Internal | — | Header | ",
+    "نقل اثاث دبي | https://example-movers.ae/ar/movers-dubai/ | Internal | — | Header | ",
+    "نقل اثاث الشارقة | https://example-movers.ae/ar/movers-sharjah/ | Internal | — | Header | ",
+    "نقل اثاث عجمان | https://example-movers.ae/ar/movers-ajman/ | Internal | — | Header | ",
+    "اتصل بنا | https://example-movers.ae/ar/contact/ | Internal | — | Header | ",
+    "English | https://example-movers.ae/movers-dubai/ | Internal | — | Header | ",
+    "واتساب | https://wa.me/971500000000 | WhatsApp | — | Header | ",
+    "الرئيسية | https://example-movers.ae/ar/ ×3 | Internal | — | Main content | ",
+    "اتصل الآن | — ×2 | Phone | — | Main content | ",
+    "اقرأ المزيد | https://example-movers.ae/ar/about/ | Internal | — | Main content | generic anchor",
+    "+971 50 000 0000 | — ×2 | Phone | — | Footer | ",
+    "info@example-movers.ae | — | Email | — | Footer | ",
+    "(none) | https://www.facebook.com/examplemovers | External | _blank | Footer | no anchor textno noopener",
+    "شريكنا | https://partner-site.com/ | External | nofollow sponsored | Footer | ",
+    "أعلى الصفحة | https://example-movers.ae/ar/movers-sharjah/# | #Anchor | — | Footer | empty/# href"
+   ],
+   "q": 2,
+   "issuesOnly": 3,
+   "domains": [
+    "facebook.com",
+    "partner-site.com"
+   ]
+  },
+  "p2-images": {
+   "stats": [
+    "4Images",
+    "2With alt",
+    "2Alt missing",
+    "0Empty alt",
+    "1No dimensions",
+    "1Lazy loaded",
+    "0Backgrounds"
+   ],
+   "filters": {
+    "all": 4,
+    "withalt": 2,
+    "missing": 2,
+    "empty": 0,
+    "nodims": 1,
+    "bg": 0
+   },
+   "noPrevCols": [
+    "#",
+    "File",
+    "Alt text",
+    "Size",
+    "Loading",
+    "Section",
+    "Flags"
+   ]
+  },
+  "p2-keywords": {
+   "grams": [
+    "الشارقة106.2%",
+    "نقل74.3%",
+    "الاثاث63.7%",
+    "اثاث53.1%",
+    "درهم42.5%",
+    "لنقل31.9%",
+    "الفك21.2%",
+    "والتركيب21.2%",
+    "الاسبوع21.2%",
+    "تغليف21.2%",
+    "عالية21.2%",
+    "الجودة21.2%",
+    "مغلقة21.2%",
+    "شقة21.2%",
+    "الرئيسية10.6%",
+    "شركة10.6%",
+    "مثال10.6%",
+    "خيارك10.6%",
+    "الاول10.6%",
+    "المنازل10.6%",
+    "والشقق10.6%",
+    "والفلل10.6%",
+    "والمكاتب10.6%",
+    "نقدم10.6%",
+    "خدمة10.6%",
+    "متكاملة10.6%",
+    "تشمل10.6%",
+    "والتغليف10.6%",
+    "والنقل10.6%",
+    "بايدي10.6%",
+    "نقل اثاث44.9%",
+    "اثاث الشارقة33.7%",
+    "نقل الاثاث33.7%",
+    "لنقل الاثاث22.5%",
+    "عالية الجودة22.5%",
+    "نقل اثاث الشارقة35.6%",
+    "الاثاث في الشارقة23.7%"
+   ],
+   "stats": [
+    "162Words (main)",
+    "197Words (all)",
+    "116Unique words",
+    "23Sentences",
+    "7Avg words / sentence",
+    "0Sentences > 25 words",
+    "6Paragraphs (<p>)",
+    "4Other text blocks",
+    "1 minReading time",
+    "Arabic (100% Arabic)Script"
+   ],
+   "check": [
+    "0times in main content 0%density ! Title tag! Meta description! H1! Subheadings (H2–H6): 0 of 6! First paragraph✓ URL / slug! Image alt text: 0 images! Open Graph title! Internal link anchors"
+   ],
+   "clicked": [
+    "الشارقة",
+    [
+     "10times in main content 6.2%density ✓ Title tag✓ Meta description✓ H1✓ Subheadings (H2–H6): 3 of 6✓ First paragraph! URL / slug✓ Image alt text: 1 images✓ Open Graph title✓ Internal link anchors"
+    ]
+   ]
+  },
+  "p2-technical": {
+   "sections": [
+    "Detected platform, plugins and tracking",
+    "<html> attributes",
+    "Scripts (2 external, 3 inline)",
+    "Stylesheets (1)",
+    "Resource hints",
+    "HTML comments (1)"
+   ],
+   "rows": [
+    "WordPressCMSgenerator: WordPress 6.6.1 | Elementor 3.23.4; features: e_optimized_css_loading",
+    "Yoast SEOSEO pluginYoast comment / schema class",
+    "ElementorPage builderelementor classes",
+    "Astra themeThemeastra assets",
+    "jQueryJS libraryjquery script",
+    "Google Analytics 4TrackingG-ABC1234XYZ",
+    "Google Ads tagTrackingAW-123456789",
+    "inline 1.0 KB: {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://example-movers.ae/ar/movers-sharjah/\",\"url\":\"https://example-movers.ae/ar/movers-sh application/ld+json—head",
+    "inline 0.3 KB: {\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"كم تكلفة نقل اثاث شقة في الشارقة؟\",\"acceptedAnswer\":{\"@type\":\"Answe application/ld+json—head",
+    "https://www.googletagmanager.com/gtag/js?id=G-ABC1234XYZ jsasynchead",
+    "inline 0.2 KB: window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ABC1234XYZ');gtag('config','AW-123456789 js—head",
+    "https://example-movers.ae/wp-includes/js/jquery/jquery.min.js jsblockinghead",
+    "preconnecthttps://fonts.gstatic.com/"
+   ]
+  },
+  "p2-aiprompt": {
+   "goals": [
+    "rewrite",
+    "brief",
+    "audit",
+    "meta",
+    "faq",
+    "localize",
+    "unique"
+   ],
+   "langs": [
+    "same",
+    "en",
+    "ar"
+   ],
+   "notes": {
+    "same": [
+     "Includes 2 similar page(s) from this project."
+    ],
+    "en": [
+     "Includes 2 similar page(s) from this project."
+    ],
+    "ar": [
+     "Includes 2 similar page(s) from this project."
+    ]
+   },
+   "count": [
+    "4,513 characters"
+   ],
+   "dlName": "example-movers-ae-ar-movers-sharjah-prompt-rewrite.md"
+  },
+  "p2-export": {
+   "names": {
+    "main-md": "example-movers-ae-ar-movers-sharjah-content.md",
+    "full-md": "example-movers-ae-ar-movers-sharjah-seo-report.md",
+    "json": "example-movers-ae-ar-movers-sharjah-report.json",
+    "links": "example-movers-ae-ar-movers-sharjah-links.csv",
+    "images": "example-movers-ae-ar-movers-sharjah-images.csv",
+    "headings": "example-movers-ae-ar-movers-sharjah-headings.csv",
+    "meta": "example-movers-ae-ar-movers-sharjah-meta.csv",
+    "content": "example-movers-ae-ar-movers-sharjah-content.csv"
+   },
+   "previewNote": [
+    ""
+   ],
+   "printBtn": 1
+  },
+  "p3-open": {
+   "title": [
+    "نقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب"
+   ],
+   "meta": "https://example-movers.ae/ar/movers-ajman/ · 8.7 KB HTML · ",
+   "pos": [
+    "3 / 4"
+   ],
+   "prevDisabled": false,
+   "nextDisabled": false,
+   "tcounts": [
+    "7",
+    "10",
+    "7",
+    "31",
+    "16",
+    "4"
+   ]
+  },
+  "p3-overview": {
+   "stats": [
+    [
+     "179",
+     "Words (main)",
+     "214 on whole page"
+    ],
+    [
+     "1 min",
+     "Reading time",
+     "24 sentences"
+    ],
+    [
+     "1",
+     "H1 headings",
+     "7 headings total"
+    ],
+    [
+     "9",
+     "Internal links",
+     "2 external · 3 WhatsApp/phone"
+    ],
+    [
+     "4",
+     "Images",
+     "2 missing alt"
+    ],
+    [
+     "10",
+     "Schema types",
+     "WebPage, BreadcrumbList, ListItem"
+    ],
+    [
+     "31",
+     "Content blocks",
+     "7 paragraphs · 2 lists"
+    ],
+    [
+     "16.8%",
+     "Text / HTML",
+     "8.7 KB of HTML"
+    ]
+   ],
+   "cards": [
+    "✕1Errors",
+    "!6Warnings",
+    "i8Notices",
+    "✓9Passed"
+   ],
+   "filters": {
+    "all": [
+     "✕ Schema MovingCompany: aggregateRating needs reviewCount or ratingCount",
+     "! Content Thin main content: 179 words",
+     "! Images 2 of 4 images have no alt attribute",
+     "! Links 1 link(s) without any anchor text",
+     "! Schema WebPage: Missing recommended WebPage properties: description",
+     "! Schema MovingCompany: Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+     "! Schema FAQPage: 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\"",
+     "i International hreflang set without x-default",
+     "i Headings 1 heading level skip(s)H4: لماذا تختارنا؟",
+     "i Headings 1 heading(s) inside hidden elementsH2: نقل اثاث عجمان (hidden on desktop)",
+     "i Content 1 content block(s) are hidden (display:none, device-hidden, etc.)",
+     "i Images 1 image(s) without width/height (layout shift risk)",
+     "i Images 3 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Links 1 link(s) with generic anchor text (\"read more\", \"click here\"…)",
+     "i Social Missing Open Graph: og:image",
+     "✓ Meta Title length OK (55 chars, ~380px)",
+     "✓ Meta Meta description length OK (100 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/ar/movers-ajman/",
+     "✓ Indexing Indexable (robots: index, follow, max-image-preview:large)",
+     "✓ Technical Language declared: ar (dir=rtl)",
+     "✓ International 2 hreflang alternates",
+     "✓ Headings Exactly one H1نقل اثاث عجمان مع الفك والتركيب",
+     "✓ Links 9 internal links, 2 external",
+     "✓ Schema Structured data types: WebPage, BreadcrumbList, ListItem, WebSite, MovingCompany, PostalAddress, AggregateRating, FAQPage, Question, Answer"
+    ],
+    "error": [
+     "✕ Schema MovingCompany: aggregateRating needs reviewCount or ratingCount"
+    ],
+    "warning": [
+     "! Content Thin main content: 179 words",
+     "! Images 2 of 4 images have no alt attribute",
+     "! Links 1 link(s) without any anchor text",
+     "! Schema WebPage: Missing recommended WebPage properties: description",
+     "! Schema MovingCompany: Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+     "! Schema FAQPage: 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\""
+    ],
+    "notice": [
+     "i International hreflang set without x-default",
+     "i Headings 1 heading level skip(s)H4: لماذا تختارنا؟",
+     "i Headings 1 heading(s) inside hidden elementsH2: نقل اثاث عجمان (hidden on desktop)",
+     "i Content 1 content block(s) are hidden (display:none, device-hidden, etc.)",
+     "i Images 1 image(s) without width/height (layout shift risk)",
+     "i Images 3 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Links 1 link(s) with generic anchor text (\"read more\", \"click here\"…)",
+     "i Social Missing Open Graph: og:image"
+    ],
+    "pass": [
+     "✓ Meta Title length OK (55 chars, ~380px)",
+     "✓ Meta Meta description length OK (100 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/ar/movers-ajman/",
+     "✓ Indexing Indexable (robots: index, follow, max-image-preview:large)",
+     "✓ Technical Language declared: ar (dir=rtl)",
+     "✓ International 2 hreflang alternates",
+     "✓ Headings Exactly one H1نقل اثاث عجمان مع الفك والتركيب",
+     "✓ Links 9 internal links, 2 external",
+     "✓ Schema Structured data types: WebPage, BreadcrumbList, ListItem, WebSite, MovingCompany, PostalAddress, AggregateRating, FAQPage, Question, Answer"
+    ]
+   },
+   "gotoTiles": 8
+  },
+  "p3-meta": {
+   "kv": [
+    "Titleنقل اثاث عجمان | شركة مثال لنقل الاثاث مع الفك والتركيب 55 chars · ~380px of 580px",
+    "Meta descriptionشركة مثال لنقل الاثاث في عجمان: فك وتركيب وتغليف ونقل آمن للمنازل والمكاتب بأسعار مناسبة. اتصل الآن. 100 chars · ~493px of 920px",
+    "Canonicalhttps://example-movers.ae/ar/movers-ajman/",
+    "Meta robotsindex, follow, max-image-preview:large",
+    "Viewportwidth=device-width, initial-scale=1",
+    "CharsetUTF-8",
+    "HTML lang / dirar · dir=rtl",
+    "AuthorNot set",
+    "GeneratorWordPress 6.6.1 | Elementor 3.23.4; features: e_optimized_css_loading",
+    "Theme colorNot set",
+    "Favicon / icons https://example-movers.ae/wp-content/uploads/2024/01/fav-32x32.png icon 32x32",
+    "ManifestNot set"
+   ],
+   "tables": [
+    6,
+    1,
+    2,
+    1,
+    14,
+    6
+   ],
+   "sections": [
+    "Essential tags",
+    "Open Graph (Facebook, WhatsApp, LinkedIn)",
+    "Twitter / X card",
+    "Hreflang alternates",
+    "Site verification tags",
+    "All meta tags (14)",
+    "All <link> tags (6)"
+   ]
+  },
+  "p3-schema": {
+   "cards": 2,
+   "entities": 5,
+   "types": [
+    "WebPage",
+    "BreadcrumbList",
+    "WebSite",
+    "MovingCompany",
+    "FAQPage"
+   ],
+   "checks": [
+    "! Missing recommended WebPage properties: description",
+    "✓ All commonly recommended BreadcrumbList properties present",
+    "✓ 2 breadcrumb items look complete",
+    "✓ All commonly recommended WebSite properties present",
+    "! Missing recommended MovingCompany (LocalBusiness) properties: image, openingHoursSpecification or openingHours, geo, priceRange",
+    "✕ aggregateRating needs reviewCount or ratingCount",
+    "✓ All commonly recommended FAQPage properties present",
+    "✓ 2 FAQ questions, all with answers",
+    "! 1 FAQ question(s) in schema not found in visible page text: \"هل تقدمون خدمة التخزين؟\""
+   ],
+   "sections": [
+    "Types found",
+    "JSON-LD (2 blocks)"
+   ]
+  },
+  "p3-headings": {
+   "lvl": [
+    "1H1",
+    "4H2",
+    "1H3",
+    "1H4",
+    "0H5",
+    "0H6"
+   ],
+   "rows": [
+    "H1 نقل اثاث عجمان مع الفك والتركيب 31 ch",
+    "H2 نقل اثاث عجمان hidden on desktop 14 ch",
+    "H2 خدمات نقل الاثاث في عجمان 25 ch",
+    "H4 لماذا تختارنا؟ skipped H314 ch",
+    "H2 أسعار نقل الاثاث في عجمان 25 ch",
+    "H2 الأسئلة الشائعة 15 ch",
+    "H3 تواصل معنا Footer 10 ch"
+   ],
+   "mainOnly": [
+    "H1 نقل اثاث عجمان مع الفك والتركيب 31 ch",
+    "H2 نقل اثاث عجمان hidden on desktop 14 ch",
+    "H2 خدمات نقل الاثاث في عجمان 25 ch",
+    "H4 لماذا تختارنا؟ skipped H314 ch",
+    "H2 أسعار نقل الاثاث في عجمان 25 ch",
+    "H2 الأسئلة الشائعة 15 ch"
+   ]
+  },
+  "p3-content": {
+   "grouped": {
+    "meta": [
+     "31 blocks · 215 words shown"
+    ],
+    "blocks": 31,
+    "groups": [
+     "Header",
+     "Main content",
+     "Footer"
+    ]
+   },
+   "order": {
+    "meta": [
+     "31 blocks · 215 words shown"
+    ],
+    "blocks": 31,
+    "dividers": 3
+   },
+   "no_header": 28,
+   "no_nav": 31,
+   "no_main": 9,
+   "no_aside": 31,
+   "no_footer": 25,
+   "noHidden": 30,
+   "noTags": 0
+  },
+  "p3-links": {
+   "stats": [
+    "16Total",
+    "13Unique URLs",
+    "9Internal",
+    "2External",
+    "1WhatsApp",
+    "2Phone",
+    "1Email",
+    "1Nofollow",
+    "3With issues"
+   ],
+   "types": {
+    "all": 16,
+    "internal": 9,
+    "external": 2,
+    "anchor": 1,
+    "whatsapp": 1,
+    "phone": 2,
+    "email": 1
+   },
+   "regions": {
+    "all": 16,
+    "header": 8,
+    "nav": 0,
+    "main": 3,
+    "aside": 0,
+    "footer": 5
+   },
+   "all": 16,
+   "allRows": [
+    "شعار شركة مثال لنقل الاثاثfrom image alt | https://example-movers.ae/ar/ ×3 | Internal | — | Header | ",
+    "الرئيسية | https://example-movers.ae/ar/ ×3 | Internal | — | Header | ",
+    "نقل اثاث دبي | https://example-movers.ae/ar/movers-dubai/ | Internal | — | Header | ",
+    "نقل اثاث الشارقة | https://example-movers.ae/ar/movers-sharjah/ | Internal | — | Header | ",
+    "نقل اثاث عجمان | https://example-movers.ae/ar/movers-ajman/ | Internal | — | Header | ",
+    "اتصل بنا | https://example-movers.ae/ar/contact/ | Internal | — | Header | ",
+    "English | https://example-movers.ae/movers-dubai/ | Internal | — | Header | ",
+    "واتساب | https://wa.me/971500000000 | WhatsApp | — | Header | ",
+    "الرئيسية | https://example-movers.ae/ar/ ×3 | Internal | — | Main content | ",
+    "اتصل الآن | — ×2 | Phone | — | Main content | ",
+    "اقرأ المزيد | https://example-movers.ae/ar/about/ | Internal | — | Main content | generic anchor",
+    "+971 50 000 0000 | — ×2 | Phone | — | Footer | ",
+    "info@example-movers.ae | — | Email | — | Footer | ",
+    "(none) | https://www.facebook.com/examplemovers | External | _blank | Footer | no anchor textno noopener",
+    "شريكنا | https://partner-site.com/ | External | nofollow sponsored | Footer | ",
+    "أعلى الصفحة | https://example-movers.ae/ar/movers-ajman/# | #Anchor | — | Footer | empty/# href"
+   ],
+   "q": 2,
+   "issuesOnly": 3,
+   "domains": [
+    "facebook.com",
+    "partner-site.com"
+   ]
+  },
+  "p3-images": {
+   "stats": [
+    "4Images",
+    "2With alt",
+    "2Alt missing",
+    "0Empty alt",
+    "1No dimensions",
+    "1Lazy loaded",
+    "0Backgrounds"
+   ],
+   "filters": {
+    "all": 4,
+    "withalt": 2,
+    "missing": 2,
+    "empty": 0,
+    "nodims": 1,
+    "bg": 0
+   },
+   "noPrevCols": [
+    "#",
+    "File",
+    "Alt text",
+    "Size",
+    "Loading",
+    "Section",
+    "Flags"
+   ]
+  },
+  "p3-keywords": {
+   "grams": [
+    "عجمان116.1%",
+    "نقل73.9%",
+    "الاثاث63.4%",
+    "اثاث52.8%",
+    "درهم42.2%",
+    "لنقل31.7%",
+    "الفك21.1%",
+    "والتركيب21.1%",
+    "مناسبة21.1%",
+    "جميع21.1%",
+    "مناطق21.1%",
+    "الاسبوع21.1%",
+    "تغليف21.1%",
+    "عالية21.1%",
+    "الجودة21.1%",
+    "مغلقة21.1%",
+    "شقة21.1%",
+    "الرئيسية10.6%",
+    "شركة10.6%",
+    "مثال10.6%",
+    "خيارك10.6%",
+    "الاول10.6%",
+    "المنازل10.6%",
+    "والشقق10.6%",
+    "والفلل10.6%",
+    "والمكاتب10.6%",
+    "نقدم10.6%",
+    "خدمة10.6%",
+    "متكاملة10.6%",
+    "تشمل10.6%",
+    "نقل اثاث44.5%",
+    "اثاث عجمان33.4%",
+    "نقل الاثاث33.4%",
+    "لنقل الاثاث22.2%",
+    "جميع مناطق22.2%",
+    "مناطق عجمان22.2%",
+    "عالية الجودة22.2%",
+    "نقل اثاث عجمان35%",
+    "جميع مناطق عجمان23.4%",
+    "الاثاث في عجمان23.4%"
+   ],
+   "stats": [
+    "179Words (main)",
+    "214Words (all)",
+    "129Unique words",
+    "24Sentences",
+    "7.5Avg words / sentence",
+    "0Sentences > 25 words",
+    "7Paragraphs (<p>)",
+    "4Other text blocks",
+    "1 minReading time",
+    "Arabic (100% Arabic)Script"
+   ],
+   "check": [
+    "0times in main content 0%density ! Title tag! Meta description! H1! Subheadings (H2–H6): 0 of 6! First paragraph✓ URL / slug! Image alt text: 0 images! Open Graph title! Internal link anchors"
+   ],
+   "clicked": [
+    "عجمان",
+    [
+     "11times in main content 6.1%density ✓ Title tag✓ Meta description✓ H1✓ Subheadings (H2–H6): 3 of 6✓ First paragraph! URL / slug✓ Image alt text: 1 images✓ Open Graph title✓ Internal link anchors"
+    ]
+   ]
+  },
+  "p3-technical": {
+   "sections": [
+    "Detected platform, plugins and tracking",
+    "<html> attributes",
+    "Scripts (2 external, 3 inline)",
+    "Stylesheets (1)",
+    "Resource hints",
+    "HTML comments (1)"
+   ],
+   "rows": [
+    "WordPressCMSgenerator: WordPress 6.6.1 | Elementor 3.23.4; features: e_optimized_css_loading",
+    "Yoast SEOSEO pluginYoast comment / schema class",
+    "ElementorPage builderelementor classes",
+    "Astra themeThemeastra assets",
+    "jQueryJS libraryjquery script",
+    "Google Analytics 4TrackingG-ABC1234XYZ",
+    "Google Ads tagTrackingAW-123456789",
+    "inline 1.0 KB: {\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https://example-movers.ae/ar/movers-ajman/\",\"url\":\"https://example-movers.ae/ar/movers-ajma application/ld+json—head",
+    "inline 0.3 KB: {\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"كم تكلفة نقل اثاث شقة في عجمان؟\",\"acceptedAnswer\":{\"@type\":\"Answer\" application/ld+json—head",
+    "https://www.googletagmanager.com/gtag/js?id=G-ABC1234XYZ jsasynchead",
+    "inline 0.2 KB: window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ABC1234XYZ');gtag('config','AW-123456789 js—head",
+    "https://example-movers.ae/wp-includes/js/jquery/jquery.min.js jsblockinghead",
+    "preconnecthttps://fonts.gstatic.com/"
+   ]
+  },
+  "p3-aiprompt": {
+   "goals": [
+    "rewrite",
+    "brief",
+    "audit",
+    "meta",
+    "faq",
+    "localize",
+    "unique"
+   ],
+   "langs": [
+    "same",
+    "en",
+    "ar"
+   ],
+   "notes": {
+    "same": [
+     "Includes 2 similar page(s) from this project."
+    ],
+    "en": [
+     "Includes 2 similar page(s) from this project."
+    ],
+    "ar": [
+     "Includes 2 similar page(s) from this project."
+    ]
+   },
+   "count": [
+    "4,620 characters"
+   ],
+   "dlName": "example-movers-ae-ar-movers-ajman-prompt-rewrite.md"
+  },
+  "p3-export": {
+   "names": {
+    "main-md": "example-movers-ae-ar-movers-ajman-content.md",
+    "full-md": "example-movers-ae-ar-movers-ajman-seo-report.md",
+    "json": "example-movers-ae-ar-movers-ajman-report.json",
+    "links": "example-movers-ae-ar-movers-ajman-links.csv",
+    "images": "example-movers-ae-ar-movers-ajman-images.csv",
+    "headings": "example-movers-ae-ar-movers-ajman-headings.csv",
+    "meta": "example-movers-ae-ar-movers-ajman-meta.csv",
+    "content": "example-movers-ae-ar-movers-ajman-content.csv"
+   },
+   "previewNote": [
+    ""
+   ],
+   "printBtn": 1
+  },
+  "p4-open": {
+   "title": [
+    "Example Movers | Furniture Movers in Dubai, Sharjah & Ajman"
+   ],
+   "meta": "https://example-movers.ae/ · 1.8 KB HTML · ",
+   "pos": [
+    "4 / 4"
+   ],
+   "prevDisabled": false,
+   "nextDisabled": true,
+   "tcounts": [
+    "2",
+    "1",
+    "3",
+    "12",
+    "7",
+    "1"
+   ]
+  },
+  "p4-overview": {
+   "stats": [
+    [
+     "90",
+     "Words (main)",
+     "98 on whole page"
+    ],
+    [
+     "1 min",
+     "Reading time",
+     "13 sentences"
+    ],
+    [
+     "1",
+     "H1 headings",
+     "3 headings total"
+    ],
+    [
+     "5",
+     "Internal links",
+     "0 external · 2 WhatsApp/phone"
+    ],
+    [
+     "1",
+     "Images",
+     "all have alt"
+    ],
+    [
+     "1",
+     "Schema types",
+     "Organization"
+    ],
+    [
+     "12",
+     "Content blocks",
+     "3 paragraphs · 2 lists"
+    ],
+    [
+     "31.5%",
+     "Text / HTML",
+     "1.8 KB of HTML"
+    ]
+   ],
+   "cards": [
+    "✕0Errors",
+    "!2Warnings",
+    "i4Notices",
+    "✓9Passed"
+   ],
+   "filters": {
+    "all": [
+     "! Content Thin main content: 90 words",
+     "! Schema Organization: Missing recommended Organization properties: sameAs, contactPoint or telephone",
+     "i Technical No favicon link tag",
+     "i Images 1 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Social Missing Open Graph: og:description, og:url, og:type",
+     "i Social No twitter:card tag",
+     "✓ Meta Title length OK (59 chars, ~557px)",
+     "✓ Meta Meta description length OK (129 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/",
+     "✓ Indexing Indexable (no robots restrictions)",
+     "✓ Technical Language declared: en (dir=ltr)",
+     "✓ Headings Exactly one H1Furniture Movers in Dubai, Sharjah and Ajman",
+     "✓ Images All images have an alt attribute",
+     "✓ Links 5 internal links, 0 external",
+     "✓ Schema Structured data types: Organization"
+    ],
+    "error": [],
+    "warning": [
+     "! Content Thin main content: 90 words",
+     "! Schema Organization: Missing recommended Organization properties: sameAs, contactPoint or telephone"
+    ],
+    "notice": [
+     "i Technical No favicon link tag",
+     "i Images 1 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+     "i Social Missing Open Graph: og:description, og:url, og:type",
+     "i Social No twitter:card tag"
+    ],
+    "pass": [
+     "✓ Meta Title length OK (59 chars, ~557px)",
+     "✓ Meta Meta description length OK (129 chars)",
+     "✓ Indexing Canonical tag presenthttps://example-movers.ae/",
+     "✓ Indexing Indexable (no robots restrictions)",
+     "✓ Technical Language declared: en (dir=ltr)",
+     "✓ Headings Exactly one H1Furniture Movers in Dubai, Sharjah and Ajman",
+     "✓ Images All images have an alt attribute",
+     "✓ Links 5 internal links, 0 external",
+     "✓ Schema Structured data types: Organization"
+    ]
+   },
+   "gotoTiles": 8
+  },
+  "p4-meta": {
+   "kv": [
+    "TitleExample Movers | Furniture Movers in Dubai, Sharjah & Ajman 59 chars · ~557px of 580px",
+    "Meta descriptionExample Movers moves homes, villas and offices across Dubai, Sharjah and Ajman with dismantling, packing, transport and assembly. 129 chars · ~834px of 920px",
+    "Canonicalhttps://example-movers.ae/",
+    "Meta robotsNot set (defaults to index, follow)",
+    "Viewportwidth=device-width, initial-scale=1",
+    "Charsetutf-8",
+    "HTML lang / diren · dir=ltr",
+    "AuthorNot set",
+    "GeneratorNot set",
+    "Theme colorNot set",
+    "Favicon / iconsNot set",
+    "ManifestNot set"
+   ],
+   "tables": [
+    2,
+    5,
+    1
+   ],
+   "sections": [
+    "Essential tags",
+    "Open Graph (Facebook, WhatsApp, LinkedIn)",
+    "Twitter / X card",
+    "Hreflang alternates",
+    "All meta tags (5)",
+    "All <link> tags (1)"
+   ]
+  },
+  "p4-schema": {
+   "cards": 1,
+   "entities": 1,
+   "types": [
+    "Organization"
+   ],
+   "checks": [
+    "! Missing recommended Organization properties: sameAs, contactPoint or telephone"
+   ],
+   "sections": [
+    "Types found",
+    "JSON-LD (1 block)"
+   ]
+  },
+  "p4-headings": {
+   "lvl": [
+    "1H1",
+    "2H2",
+    "0H3",
+    "0H4",
+    "0H5",
+    "0H6"
+   ],
+   "rows": [
+    "H1 Furniture Movers in Dubai, Sharjah and Ajman 44 ch",
+    "H2 Where we work 13 ch",
+    "H2 How a move works 16 ch"
+   ],
+   "mainOnly": [
+    "H1 Furniture Movers in Dubai, Sharjah and Ajman 44 ch",
+    "H2 Where we work 13 ch",
+    "H2 How a move works 16 ch"
+   ]
+  },
+  "p4-content": {
+   "grouped": {
+    "meta": [
+     "12 blocks · 98 words shown"
+    ],
+    "blocks": 12,
+    "groups": [
+     "Header",
+     "Main content",
+     "Footer"
+    ]
+   },
+   "order": {
+    "meta": [
+     "12 blocks · 98 words shown"
+    ],
+    "blocks": 12,
+    "dividers": 3
+   },
+   "no_header": 9,
+   "no_nav": 12,
+   "no_main": 4,
+   "no_aside": 12,
+   "no_footer": 11,
+   "noHidden": 12,
+   "noTags": 0
+  },
+  "p4-links": {
+   "stats": [
+    "7Total",
+    "6Unique URLs",
+    "5Internal",
+    "0External",
+    "1WhatsApp",
+    "1Phone",
+    "0Email",
+    "0Nofollow",
+    "0With issues"
+   ],
+   "types": {
+    "all": 7,
+    "internal": 5,
+    "whatsapp": 1,
+    "phone": 1
+   },
+   "regions": {
+    "all": 7,
+    "header": 3,
+    "nav": 0,
+    "main": 4,
+    "aside": 0,
+    "footer": 0
+   },
+   "all": 7,
+   "allRows": [
+    "Home | https://example-movers.ae/ | Internal | — | Header | ",
+    "نقل اثاث دبي | https://example-movers.ae/ar/movers-dubai/ ×2 | Internal | — | Header | ",
+    "Contact | https://example-movers.ae/contact/ | Internal | — | Header | ",
+    "Movers in Dubai (Arabic) | https://example-movers.ae/ar/movers-dubai/ ×2 | Internal | — | Main content | ",
+    "Movers in Sharjah (Arabic) | https://example-movers.ae/ar/movers-sharjah/ | Internal | — | Main content | ",
+    "+971 50 000 0000 | — | Phone | — | Main content | ",
+    "WhatsApp | https://wa.me/971500000000 | WhatsApp | — | Main content | "
+   ],
+   "q": 2,
+   "issuesOnly": 0,
+   "domains": []
+  },
+  "p4-images": {
+   "stats": [
+    "1Images",
+    "1With alt",
+    "0Alt missing",
+    "0Empty alt",
+    "0No dimensions",
+    "0Lazy loaded",
+    "0Backgrounds"
+   ],
+   "filters": {
+    "all": 1,
+    "withalt": 1,
+    "missing": 0,
+    "empty": 0,
+    "nodims": 0,
+    "bg": 0
+   },
+   "noPrevCols": [
+    "#",
+    "File",
+    "Alt text",
+    "Size",
+    "Loading",
+    "Section",
+    "Flags"
+   ]
+  },
+  "p4-keywords": {
+   "grams": [
+    "movers44.4%",
+    "furniture22.2%",
+    "dubai22.2%",
+    "sharjah22.2%",
+    "ajman22.2%",
+    "moving22.2%",
+    "transport22.2%",
+    "move22.2%",
+    "arabic22.2%",
+    "whatsapp22.2%",
+    "quote22.2%",
+    "example11.1%",
+    "company11.1%",
+    "serving11.1%",
+    "families11.1%",
+    "businesses11.1%",
+    "northern11.1%",
+    "emirates11.1%",
+    "crews11.1%",
+    "dismantle11.1%",
+    "wrap11.1%",
+    "load11.1%",
+    "reassemble11.1%",
+    "stress11.1%",
+    "work11.1%",
+    "moves11.1%",
+    "request11.1%",
+    "works11.1%",
+    "free11.1%",
+    "survey11.1%",
+    "movers in dubai26.7%"
+   ],
+   "stats": [
+    "90Words (main)",
+    "98Words (all)",
+    "66Unique words",
+    "13Sentences",
+    "6.9Avg words / sentence",
+    "0Sentences > 25 words",
+    "3Paragraphs (<p>)",
+    "0Other text blocks",
+    "1 minReading time",
+    "Latin (English)Script"
+   ],
+   "check": [
+    "4times in main content 4.4%density ✓ Title tag✓ Meta description✓ H1! Subheadings (H2–H6): 0 of 2✓ First paragraph✓ URL / slug✓ Image alt text: 1 images✓ Open Graph title✓ Internal link anchors"
+   ],
+   "clicked": [
+    "movers",
+    [
+     "4times in main content 4.4%density ✓ Title tag✓ Meta description✓ H1! Subheadings (H2–H6): 0 of 2✓ First paragraph✓ URL / slug✓ Image alt text: 1 images✓ Open Graph title✓ Internal link anchors"
+    ]
+   ]
+  },
+  "p4-technical": {
+   "sections": [
+    "Detected platform, plugins and tracking",
+    "<html> attributes",
+    "Scripts (0 external, 1 inline)",
+    "Stylesheets (0)",
+    "Resource hints"
+   ],
+   "rows": [
+    "inline 0.2 KB: {\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Example Movers\",\"url\":\"https://example-movers.ae/\",\"logo\":\"https://example-movers.ae/logo.png\"} application/ld+json—head"
+   ]
+  },
+  "p4-aiprompt": {
+   "goals": [
+    "rewrite",
+    "brief",
+    "audit",
+    "meta",
+    "faq",
+    "localize",
+    "unique"
+   ],
+   "langs": [
+    "same",
+    "en",
+    "ar"
+   ],
+   "notes": {
+    "same": [
+     "No similar pages found in this project yet. Add the other location/service pages to make this prompt more specific."
+    ],
+    "en": [
+     "No similar pages found in this project yet. Add the other location/service pages to make this prompt more specific."
+    ],
+    "ar": [
+     "No similar pages found in this project yet. Add the other location/service pages to make this prompt more specific."
+    ]
+   },
+   "count": [
+    "3,268 characters"
+   ],
+   "dlName": "example-movers-ae-prompt-rewrite.md"
+  },
+  "p4-export": {
+   "names": {
+    "main-md": "example-movers-ae-content.md",
+    "full-md": "example-movers-ae-seo-report.md",
+    "json": "example-movers-ae-report.json",
+    "links": "example-movers-ae-links.csv",
+    "images": "example-movers-ae-images.csv",
+    "headings": "example-movers-ae-headings.csv",
+    "meta": "example-movers-ae-meta.csv",
+    "content": "example-movers-ae-content.csv"
+   },
+   "previewNote": [
+    ""
+   ],
+   "printBtn": 1
+  },
+  "p4-copy": {
+   "meta": [
+    {
+     "label": "Copy title + description",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy as CSV",
+     "tip": "Copied"
+    }
+   ],
+   "schema": [
+    {
+     "label": "Copy all JSON-LD",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy JSON-LD block 1",
+     "tip": "Copied"
+    }
+   ],
+   "headings": [
+    {
+     "label": "Copy outline",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy as Markdown",
+     "tip": "Copied"
+    }
+   ],
+   "content": [
+    {
+     "label": "Copy as Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy plain text",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy Header as Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy Main content as Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy Footer as Markdown",
+     "tip": "Copied"
+    }
+   ],
+   "links": [
+    {
+     "label": "Copy URLs",
+     "tip": "Copied"
+    }
+   ],
+   "images": [
+    {
+     "label": "Copy alt texts",
+     "tip": "Copied"
+    }
+   ],
+   "export": [
+    {
+     "label": "Copy main content Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy full report Markdown",
+     "tip": "Copied"
+    },
+    {
+     "label": "Copy JSON report",
+     "tip": "Copied"
+    }
+   ],
+   "aiprompt": [
+    {
+     "label": "Copy AI prompt",
+     "tip": "Copied"
+    }
+   ]
+  },
+  "nav": {
+   "afterNext": [
+    "2 / 4"
+   ],
+   "afterPrev": [
+    "1 / 4"
+   ],
+   "tabKept": "true",
+   "arrowRight": "tab-images",
+   "arrowLeft": "tab-links",
+   "end": "tab-export",
+   "home": "tab-overview",
+   "filter": [
+    "2 نقل اثاث الشارقة | شركة مثال لنقل الاثاث مع الفك والتركيب",
+    "4 Example Movers | Furniture Movers in Dubai, Sharjah & Ajman"
+   ],
+   "filterNone": [
+    "No pages match."
+   ],
+   "gotoLinks": "true",
+   "sevCardFilter": "error"
+  },
+  "find-in-page-sync": "true",
+  "replace-flow": {
+   "title": [
+    "Replace HTML of page 1"
+   ],
+   "btn": [
+    "Update page Ctrl + Enter"
+   ],
+   "nextHidden": true,
+   "cancelVisible": true,
+   "prefilled": [
+    true,
+    "https://example-movers.ae/ar/movers-dubai/"
+   ],
+   "afterCancel": [
+    "نقل اثاث دبي | شركة مثال لنقل الاثاث مع الفك والتركيب"
+   ],
+   "afterUpdate": [
+    [
+     "4"
+    ],
+    [
+     "Page updated"
+    ]
+   ]
+  },
+  "projects": {
+   "backupName": "My-first-project-backup-<D>.json",
+   "backup": {
+    "app": "html-content-extractor",
+    "version": 1,
+    "project": {
+     "name": "My first project"
+    },
+    "pages": 4,
+    "keys": [
+     "url",
+     "html",
+     "added",
+     "order"
+    ]
+   },
+   "renameDialog": [
+    [
+     "Rename project"
+    ],
+    "My first project"
+   ],
+   "afterRename": [
+    "Client A"
+   ],
+   "newDialog": [
+    "New project"
+   ],
+   "afterNew": {
+    "options": [
+     "Client A",
+     "Client B"
+    ],
+    "count": [
+     "0"
+    ],
+    "addVisible": true,
+    "sideEmpty": [
+     "No pages yet. Paste a page’s HTML to start."
+    ],
+    "allDisabled": true
+   },
+   "afterCancel": [
+    "Client A",
+    "Client B"
+   ],
+   "afterImport": {
+    "options": [
+     "Client A",
+     "Client B",
+     "My first project"
+    ],
+    "count": [
+     "4"
+    ],
+    "toast": [
+     "Imported “My first project” with 4 pages"
+    ]
+   },
+   "badImportToast": [
+    "Import failed: Not a backup file from this app"
+   ],
+   "switchB": [
+    [
+     "0"
+    ],
+    true
+   ],
+   "deleteDialog": [
+    [
+     "Delete “Client B”?"
+    ],
+    [
+     "This deletes the project and its 0 saved page(s) from this browser. Download a Backup first if you may need them."
+    ]
+   ],
+   "afterDelete": {
+    "options": [
+     "Client A",
+     "My first project"
+    ],
+    "count": [
+     "4"
+    ]
+   }
+  },
+  "persistence": {
+   "options": [
+    "Client A",
+    "My first project"
+   ],
+   "count": [
+    "4"
+   ],
+   "view": {
+    "bulk": true,
+    "report": false,
+    "add": false
+   },
+   "storageNote": [
+    "Pages are saved in this browser. Use Backup to keep a copy or move it to another PC."
+   ]
+  },
+  "file-input-and-drop": {
+   "size": [
+    "8.7 KB · 88 lines"
+   ],
+   "len": 7576
+  }
+ },
+ "problems": [],
+ "console": [
+  "error: Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+ ]
+}

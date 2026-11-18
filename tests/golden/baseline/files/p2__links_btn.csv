@@ -1,0 +1,17 @@
+﻿anchor_text,anchor_source,href,resolved_url,type,rel,target,section,occurrences,flags
+شعار شركة مثال لنقل الاثاث,image alt,https://example-movers.ae/ar/,https://example-movers.ae/ar/,internal,,,Header,3,
+الرئيسية,text,https://example-movers.ae/ar/,https://example-movers.ae/ar/,internal,,,Header,3,
+نقل اثاث دبي,text,https://example-movers.ae/ar/movers-dubai/,https://example-movers.ae/ar/movers-dubai/,internal,,,Header,1,
+نقل اثاث الشارقة,text,/ar/movers-sharjah/,https://example-movers.ae/ar/movers-sharjah/,internal,,,Header,1,
+نقل اثاث عجمان,text,/ar/movers-ajman/,https://example-movers.ae/ar/movers-ajman/,internal,,,Header,1,
+اتصل بنا,text,/ar/contact/,https://example-movers.ae/ar/contact/,internal,,,Header,1,
+English,text,/movers-dubai/,https://example-movers.ae/movers-dubai/,internal,,,Header,1,
+واتساب,text,https://wa.me/971500000000,https://wa.me/971500000000,whatsapp,,,Header,1,
+الرئيسية,text,/ar/,https://example-movers.ae/ar/,internal,,,Main content,3,
+اتصل الآن,text,tel:+971500000000,tel:+971500000000,phone,,,Main content,2,
+اقرأ المزيد,text,/ar/about/,https://example-movers.ae/ar/about/,internal,,,Main content,1,generic anchor
++971 50 000 0000,text,tel:+971500000000,tel:+971500000000,phone,,,Footer,2,
+info@example-movers.ae,text,mailto:info@example-movers.ae,mailto:info@example-movers.ae,email,,,Footer,1,
+,none,https://www.facebook.com/examplemovers,https://www.facebook.com/examplemovers,external,,_blank,Footer,1,no anchor text; no noopener
+شريكنا,text,https://partner-site.com/,https://partner-site.com/,external,nofollow sponsored,,Footer,1,
+أعلى الصفحة,text,#,https://example-movers.ae/ar/movers-sharjah/#,anchor,,,Footer,1,empty/# href

@@ -1,0 +1,15 @@
+﻿attribute,key,content,location
+charset,charset,UTF-8,head
+name,viewport,"width=device-width, initial-scale=1",head
+name,description,شركة مثال لنقل الاثاث في الشارقة: فك وتركيب وتغليف ونقل آمن للمنازل والمكاتب بأسعار مناسبة. اتصل الآن.,head
+name,robots,"index, follow, max-image-preview:large",head
+property,og:locale,ar_AE,head
+property,og:type,article,head
+property,og:title,نقل اثاث الشارقة | شركة مثال,head
+property,og:description,فك وتركيب وتغليف ونقل اثاث في الشارقة.,head
+property,og:url,https://example-movers.ae/ar/movers-sharjah/,head
+property,og:site_name,Example Movers,head
+name,twitter:card,summary_large_image,head
+name,generator,WordPress 6.6.1,head
+name,generator,Elementor 3.23.4; features: e_optimized_css_loading,head
+name,google-site-verification,abc123exampletoken,head

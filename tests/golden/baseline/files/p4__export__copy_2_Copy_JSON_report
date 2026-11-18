@@ -1,0 +1,779 @@
+{
+  "meta": {
+    "generatedAt": "<ISO>",
+    "inputBytes": 1885,
+    "baseUrl": "https://example-movers.ae/",
+    "baseSource": "URL you entered",
+    "siteHost": "example-movers.ae",
+    "parseMs": <N>
+  },
+  "head": {
+    "htmlAttrs": [
+      {
+        "name": "lang",
+        "value": "en"
+      },
+      {
+        "name": "dir",
+        "value": "ltr"
+      }
+    ],
+    "lang": "en",
+    "dir": "ltr",
+    "titles": [
+      "Example Movers | Furniture Movers in Dubai, Sharjah & Ajman"
+    ],
+    "title": "Example Movers | Furniture Movers in Dubai, Sharjah & Ajman",
+    "titleLen": 59,
+    "titlePx": 557,
+    "descriptions": [
+      "Example Movers moves homes, villas and offices across Dubai, Sharjah and Ajman with dismantling, packing, transport and assembly."
+    ],
+    "description": "Example Movers moves homes, villas and offices across Dubai, Sharjah and Ajman with dismantling, packing, transport and assembly.",
+    "descLen": 129,
+    "descPx": 834,
+    "keywordsMeta": null,
+    "robots": [],
+    "googlebot": [],
+    "bingbot": [],
+    "viewport": "width=device-width, initial-scale=1",
+    "charset": "utf-8",
+    "canonicals": [
+      "https://example-movers.ae/"
+    ],
+    "canonicalRaw": [
+      "https://example-movers.ae/"
+    ],
+    "hreflang": [],
+    "icons": [],
+    "manifest": null,
+    "prev": null,
+    "next": null,
+    "amp": null,
+    "author": null,
+    "generator": [],
+    "themeColor": null,
+    "og": {
+      "og:title": [
+        "Example Movers"
+      ],
+      "og:image": [
+        "https://example-movers.ae/og.jpg"
+      ]
+    },
+    "twitter": {},
+    "verification": [],
+    "metas": [
+      {
+        "kind": "charset",
+        "key": "charset",
+        "keyLower": "charset",
+        "content": "utf-8",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "viewport",
+        "keyLower": "viewport",
+        "content": "width=device-width, initial-scale=1",
+        "inHead": true
+      },
+      {
+        "kind": "name",
+        "key": "description",
+        "keyLower": "description",
+        "content": "Example Movers moves homes, villas and offices across Dubai, Sharjah and Ajman with dismantling, packing, transport and assembly.",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:title",
+        "keyLower": "og:title",
+        "content": "Example Movers",
+        "inHead": true
+      },
+      {
+        "kind": "property",
+        "key": "og:image",
+        "keyLower": "og:image",
+        "content": "https://example-movers.ae/og.jpg",
+        "inHead": true
+      }
+    ],
+    "linkTags": [
+      {
+        "rel": "canonical",
+        "href": "https://example-movers.ae/",
+        "abs": "https://example-movers.ae/",
+        "hreflang": "",
+        "type": "",
+        "sizes": "",
+        "media": "",
+        "as": "",
+        "inHead": true
+      }
+    ],
+    "scripts": [
+      {
+        "src": "",
+        "type": "application/ld+json",
+        "id": "",
+        "async": false,
+        "defer": false,
+        "inline": true,
+        "size": 159,
+        "inHead": true,
+        "preview": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Example Movers\",\"url\":\"https://example-movers.ae/\",\"logo\":\"https://example-movers.ae/logo.png\"}"
+      }
+    ],
+    "stylesheets": [],
+    "hints": []
+  },
+  "schema": {
+    "jsonld": [
+      {
+        "index": 1,
+        "raw": "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Example Movers\",\"url\":\"https://example-movers.ae/\",\"logo\":\"https://example-movers.ae/logo.png\"}",
+        "valid": true,
+        "error": null,
+        "data": {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Example Movers",
+          "url": "https://example-movers.ae/",
+          "logo": "https://example-movers.ae/logo.png"
+        },
+        "entities": [
+          {
+            "type": "Organization",
+            "id": "",
+            "data": {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Example Movers",
+              "url": "https://example-movers.ae/",
+              "logo": "https://example-movers.ae/logo.png"
+            },
+            "checks": [
+              {
+                "sev": "warning",
+                "msg": "Missing recommended Organization properties: sameAs, contactPoint or telephone"
+              }
+            ]
+          }
+        ],
+        "className": "",
+        "id": "",
+        "inHead": true
+      }
+    ],
+    "microdata": [],
+    "rdfa": [],
+    "typeCounts": {
+      "Organization": 1
+    }
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Furniture Movers in Dubai, Sharjah and Ajman",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 44
+    },
+    {
+      "level": 2,
+      "text": "Where we work",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 13
+    },
+    {
+      "level": 2,
+      "text": "How a move works",
+      "fromAlt": false,
+      "region": "main",
+      "flags": [],
+      "hidden": "",
+      "id": "",
+      "length": 16
+    }
+  ],
+  "content": {
+    "blocks": [
+      {
+        "type": "link",
+        "href": "https://example-movers.ae/",
+        "text": "Home",
+        "html": "<a class=\"il\" href=\"https://example-movers.ae/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/\">Home</a>",
+        "md": "[Home](https://example-movers.ae/)",
+        "region": "header"
+      },
+      {
+        "type": "link",
+        "href": "https://example-movers.ae/ar/movers-dubai/",
+        "text": "نقل اثاث دبي",
+        "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/movers-dubai/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/movers-dubai/\">نقل اثاث دبي</a>",
+        "md": "[نقل اثاث دبي](https://example-movers.ae/ar/movers-dubai/)",
+        "region": "header"
+      },
+      {
+        "type": "link",
+        "href": "https://example-movers.ae/contact/",
+        "text": "Contact",
+        "html": "<a class=\"il\" href=\"https://example-movers.ae/contact/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/contact/\">Contact</a>",
+        "md": "[Contact](https://example-movers.ae/contact/)",
+        "region": "header"
+      },
+      {
+        "type": "heading",
+        "level": 1,
+        "text": "Furniture Movers in Dubai, Sharjah and Ajman",
+        "html": "Furniture Movers in Dubai, Sharjah and Ajman",
+        "md": "Furniture Movers in Dubai, Sharjah and Ajman",
+        "region": "main"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "Example Movers is a moving company serving families and businesses across the northern Emirates. Our crews dismantle, wrap, load, transport and reassemble furniture so you can move without stress.",
+        "html": "Example Movers is a moving company serving families and businesses across the northern Emirates. Our crews dismantle, wrap, load, transport and reassemble furniture so you can move without stress.",
+        "md": "Example Movers is a moving company serving families and businesses across the northern Emirates. Our crews dismantle, wrap, load, transport and reassemble furniture so you can move without stress.",
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Where we work",
+        "html": "Where we work",
+        "md": "Where we work",
+        "region": "main"
+      },
+      {
+        "type": "list",
+        "ordered": false,
+        "items": [
+          {
+            "text": "Movers in Dubai (Arabic)",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/movers-dubai/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/movers-dubai/\">Movers in Dubai (Arabic)</a>",
+            "md": "[Movers in Dubai (Arabic)](https://example-movers.ae/ar/movers-dubai/)",
+            "depth": 0
+          },
+          {
+            "text": "Movers in Sharjah (Arabic)",
+            "html": "<a class=\"il\" href=\"https://example-movers.ae/ar/movers-sharjah/\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://example-movers.ae/ar/movers-sharjah/\">Movers in Sharjah (Arabic)</a>",
+            "md": "[Movers in Sharjah (Arabic)](https://example-movers.ae/ar/movers-sharjah/)",
+            "depth": 0
+          },
+          {
+            "text": "Ajman moves on request",
+            "html": "Ajman moves on request",
+            "md": "Ajman moves on request",
+            "depth": 0
+          }
+        ],
+        "region": "main"
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "How a move works",
+        "html": "How a move works",
+        "md": "How a move works",
+        "region": "main"
+      },
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          {
+            "text": "Free survey by phone or WhatsApp",
+            "html": "Free survey by phone or WhatsApp",
+            "md": "Free survey by phone or WhatsApp",
+            "depth": 0
+          },
+          {
+            "text": "Fixed quote before moving day",
+            "html": "Fixed quote before moving day",
+            "md": "Fixed quote before moving day",
+            "depth": 0
+          },
+          {
+            "text": "Packing, loading and transport",
+            "html": "Packing, loading and transport",
+            "md": "Packing, loading and transport",
+            "depth": 0
+          },
+          {
+            "text": "Assembly and placement in your new home",
+            "html": "Assembly and placement in your new home",
+            "md": "Assembly and placement in your new home",
+            "depth": 0
+          }
+        ],
+        "region": "main"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "Call +971 50 000 0000 or message us on WhatsApp for a quote.",
+        "html": "Call <a class=\"il\" href=\"tel:+971500000000\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"tel:+971500000000\">+971 50 000 0000</a> or message us on <a class=\"il\" href=\"https://wa.me/971500000000\" target=\"_blank\" rel=\"noopener noreferrer\" title=\"https://wa.me/971500000000\">WhatsApp</a> for a quote.",
+        "md": "Call [+971 50 000 0000](tel:+971500000000) or message us on [WhatsApp](https://wa.me/971500000000) for a quote.",
+        "region": "main"
+      },
+      {
+        "type": "image",
+        "src": "https://example-movers.ae/team.jpg",
+        "alt": "Example Movers team loading a truck",
+        "title": "",
+        "width": "800",
+        "height": "500",
+        "region": "main"
+      },
+      {
+        "type": "paragraph",
+        "tag": "p",
+        "text": "© 2026 Example Movers",
+        "html": "© 2026 Example Movers",
+        "md": "© 2026 Example Movers",
+        "region": "footer"
+      }
+    ],
+    "hasMain": true
+  },
+  "links": {
+    "items": [
+      {
+        "text": "Home",
+        "source": "text",
+        "href": "/",
+        "abs": "https://example-movers.ae/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "نقل اثاث دبي",
+        "source": "text",
+        "href": "/ar/movers-dubai/",
+        "abs": "https://example-movers.ae/ar/movers-dubai/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 2
+      },
+      {
+        "text": "Contact",
+        "source": "text",
+        "href": "/contact/",
+        "abs": "https://example-movers.ae/contact/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "header",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "Movers in Dubai (Arabic)",
+        "source": "text",
+        "href": "/ar/movers-dubai/",
+        "abs": "https://example-movers.ae/ar/movers-dubai/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "main",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 2
+      },
+      {
+        "text": "Movers in Sharjah (Arabic)",
+        "source": "text",
+        "href": "/ar/movers-sharjah/",
+        "abs": "https://example-movers.ae/ar/movers-sharjah/",
+        "type": "internal",
+        "rel": "",
+        "target": "",
+        "region": "main",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "+971 50 000 0000",
+        "source": "text",
+        "href": "tel:+971500000000",
+        "abs": "tel:+971500000000",
+        "type": "phone",
+        "rel": "",
+        "target": "",
+        "region": "main",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      },
+      {
+        "text": "WhatsApp",
+        "source": "text",
+        "href": "https://wa.me/971500000000",
+        "abs": "https://wa.me/971500000000",
+        "type": "whatsapp",
+        "rel": "",
+        "target": "",
+        "region": "main",
+        "hasImage": false,
+        "flags": [],
+        "title": "",
+        "occurrences": 1
+      }
+    ],
+    "summary": {
+      "total": 7,
+      "unique": 6,
+      "internal": 5,
+      "external": 0,
+      "anchor": 0,
+      "whatsapp": 1,
+      "phone": 1,
+      "email": 0,
+      "javascript": 0,
+      "nofollow": 0,
+      "withIssues": 0,
+      "uniqueExternalDomains": []
+    }
+  },
+  "images": {
+    "items": [
+      {
+        "src": "https://example-movers.ae/team.jpg",
+        "file": "team.jpg",
+        "ext": "jpg",
+        "alt": "Example Movers team loading a truck",
+        "title": "",
+        "width": "800",
+        "height": "500",
+        "loading": "",
+        "fetchpriority": "",
+        "srcset": "",
+        "sizes": "",
+        "region": "main",
+        "linkTo": "",
+        "flags": [
+          "legacy format (consider WebP/AVIF)"
+        ],
+        "kind": "img"
+      }
+    ],
+    "ogImage": "https://example-movers.ae/og.jpg",
+    "summary": {
+      "total": 1,
+      "backgrounds": 0,
+      "missingAlt": 0,
+      "emptyAlt": 0,
+      "withAlt": 1,
+      "noDims": 0,
+      "lazy": 0,
+      "formats": {
+        "jpg": 1
+      }
+    }
+  },
+  "stats": {
+    "mainWords": 90,
+    "allWords": 98,
+    "mainChars": 542,
+    "sentences": 13,
+    "avgSentence": 6.9,
+    "longSentences": 0,
+    "paragraphs": 3,
+    "textBlocks": 0,
+    "lists": 2,
+    "tables": 0,
+    "readingMin": 1,
+    "textRatio": 31.5,
+    "script": "Latin (English)",
+    "arabicShare": 0
+  },
+  "keywords": {
+    "totalWords": 90,
+    "uniqueWords": 66,
+    "one": [
+      {
+        "phrase": "movers",
+        "count": 4,
+        "density": 4.4
+      },
+      {
+        "phrase": "furniture",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "dubai",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "sharjah",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "ajman",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "moving",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "transport",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "move",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "arabic",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "whatsapp",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "quote",
+        "count": 2,
+        "density": 2.2
+      },
+      {
+        "phrase": "example",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "company",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "serving",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "families",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "businesses",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "northern",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "emirates",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "crews",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "dismantle",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "wrap",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "load",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "reassemble",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "stress",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "work",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "moves",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "request",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "works",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "free",
+        "count": 1,
+        "density": 1.1
+      },
+      {
+        "phrase": "survey",
+        "count": 1,
+        "density": 1.1
+      }
+    ],
+    "two": [],
+    "three": [
+      {
+        "phrase": "movers in dubai",
+        "count": 2,
+        "density": 6.7
+      }
+    ]
+  },
+  "tech": {
+    "found": [],
+    "comments": [],
+    "nextData": null
+  },
+  "issues": [
+    {
+      "sev": "warning",
+      "cat": "Content",
+      "msg": "Thin main content: 90 words",
+      "detail": ""
+    },
+    {
+      "sev": "warning",
+      "cat": "Schema",
+      "msg": "Organization: Missing recommended Organization properties: sameAs, contactPoint or telephone",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Technical",
+      "msg": "No favicon link tag",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Images",
+      "msg": "1 image(s) in JPG/PNG/GIF; WebP or AVIF is lighter",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Social",
+      "msg": "Missing Open Graph: og:description, og:url, og:type",
+      "detail": ""
+    },
+    {
+      "sev": "notice",
+      "cat": "Social",
+      "msg": "No twitter:card tag",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Meta",
+      "msg": "Title length OK (59 chars, ~557px)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Meta",
+      "msg": "Meta description length OK (129 chars)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Indexing",
+      "msg": "Canonical tag present",
+      "detail": "https://example-movers.ae/"
+    },
+    {
+      "sev": "pass",
+      "cat": "Indexing",
+      "msg": "Indexable (no robots restrictions)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Technical",
+      "msg": "Language declared: en (dir=ltr)",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Headings",
+      "msg": "Exactly one H1",
+      "detail": "Furniture Movers in Dubai, Sharjah and Ajman"
+    },
+    {
+      "sev": "pass",
+      "cat": "Images",
+      "msg": "All images have an alt attribute",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Links",
+      "msg": "5 internal links, 0 external",
+      "detail": ""
+    },
+    {
+      "sev": "pass",
+      "cat": "Schema",
+      "msg": "Structured data types: Organization",
+      "detail": ""
+    }
+  ]
+}
