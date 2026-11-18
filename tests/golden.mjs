@@ -162,7 +162,7 @@ for (let p = 0; p < pageCount; p++) {
   const P = `p${p + 1}`;
   await step(`${P}-open`, async () => {
     await page.locator('#side-all').click(); await page.locator('#page-list [data-page]').nth(p).click(); await page.waitForSelector('#report:not([hidden])');
-    return { title: await txt('#sb-title'), meta: (await txt('#sb-meta'))[0].replace(/added .*/, ''), pos: await txt('#pos-label'), prevDisabled: await page.locator('#prev-btn').isDisabled(), nextDisabled: await page.locator('#next-btn').isDisabled(), tcounts: await txt('#tablist .tcount') };
+    return { title: await txt('#sb-title'), meta: (await txt('#sb-meta'))[0].replace(/added .*/, ''), pos: await txt('#pos-label'), prevDisabled: await page.locator('#prev-btn').isDisabled(), nextDisabled: await page.locator('#next-btn').isDisabled(), tcounts: await page.$$eval('#tablist .tcount', (els) => Object.fromEntries(els.map((e) => [e.id, e.textContent.trim()]))) };
   });
   await step(`${P}-overview`, async () => {
     await tab('overview'); const r = { stats: await page.$$eval('#pi-overview .stat', (els) => els.map((e) => [e.querySelector('.stat-v')?.textContent, e.querySelector('.stat-l')?.textContent, e.querySelector('.stat-s')?.textContent])), cards: await txt('#pi-overview .sev-card'), filters: {} };

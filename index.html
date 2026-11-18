@@ -3,21 +3,59 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    /* Apply saved display settings before first paint (no flash). Storage may be blocked: ignore errors. */
+    try {
+      var s = localStorage.getItem('hce:scheme'), r = document.documentElement;
+      if (s === 'light' || s === 'dark') document.querySelector('meta[name="color-scheme"]').content = s;
+      if (localStorage.getItem('hce:density') === 'compact') r.dataset.density = 'compact';
+      if (localStorage.getItem('hce:side') === 'collapsed') r.dataset.side = 'collapsed';
+    } catch (e) {}
+  </script>
   <title>HTML Content Extractor · SEO Page Analyzer</title>
   <meta name="description" content="Paste pages' HTML and extract every piece of content: meta tags, schema, headings, body content, links and images, with SEO checks and cross-page comparison.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M11 10l-5 6 5 6M21 10l5 6-5 6' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%234338ca'/%3E%3Cpath d='M11 10l-5 6 5 6M21 10l5 6-5 6' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
   <script src="js/parser.js" defer></script>
   <script src="js/bulk.js" defer></script>
   <script src="js/prompts.js" defer></script>
   <script src="js/sample.js" defer></script>
+  <script src="js/shell.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
+  <!-- icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4"/></symbol>
+      <symbol id="i-overview" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></symbol>
+      <symbol id="i-meta" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8z"/><circle cx="7.5" cy="7.5" r="1.2"/></symbol>
+      <symbol id="i-schema" viewBox="0 0 24 24"><path d="M8 3H7a2 2 0 0 0-2 2v4a2 2 0 0 1-2 2 2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h1M16 3h1a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2 2 2 0 0 0-2 2v4a2 2 0 0 1-2 2h-1"/></symbol>
+      <symbol id="i-headings" viewBox="0 0 24 24"><path d="M5 4v16M19 4v16M5 12h14"/></symbol>
+      <symbol id="i-content" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+      <symbol id="i-keywords" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+      <symbol id="i-links" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+      <symbol id="i-images" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="1.6"/><path d="m21 16-5-5L6 20"/></symbol>
+      <symbol id="i-technical" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6" rx="1"/><path d="M9 1v3M15 1v3M9 20v3M15 20v3M1 9h3M1 15h3M20 9h3M20 15h3"/></symbol>
+      <symbol id="i-aiprompt" viewBox="0 0 24 24"><path d="m12 3 1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-export" viewBox="0 0 24 24"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol>
+      <symbol id="i-import" viewBox="0 0 24 24"><path d="M12 15V3m0 0L8 7m4-4 4 4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+      <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+      <symbol id="i-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></symbol>
+      <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16z"/><path d="m13.5 6.5 4 4"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></symbol>
+    </defs>
+  </svg>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="topbar">
     <div class="wrap-wide topbar-inner">
       <div class="brand">
-        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-mark" aria-hidden="true"><svg class="ico"><use href="#i-code"/></svg></span>
         <div>
           <div class="brand-name">HTML Content Extractor</div>
           <div class="brand-sub">SEO &amp; content analysis from raw page HTML</div>
@@ -26,11 +64,34 @@
       <div class="project-bar">
         <label class="field inline project-field"><span>Project</span>
           <select id="project-select" aria-label="Current project"></select></label>
-        <button type="button" class="btn sm" id="proj-new">New</button>
-        <button type="button" class="btn sm" id="proj-rename">Rename</button>
-        <button type="button" class="btn sm" id="proj-backup" title="Download the whole project (all pages) as one file">Backup</button>
-        <label class="btn sm" title="Restore a project backup file">Import<input type="file" id="proj-import" accept=".json,application/json" class="visually-hidden"></label>
-        <button type="button" class="btn sm danger-ghost" id="proj-delete">Delete</button>
+        <button type="button" class="btn sm" id="proj-new"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>New</button>
+        <button type="button" class="btn sm icon" id="proj-menu-btn" popovertarget="proj-menu" aria-label="Project actions" title="Project actions"><svg class="ico" aria-hidden="true"><use href="#i-more"/></svg></button>
+        <div id="proj-menu" popover class="menu" aria-label="Project actions">
+          <button type="button" class="menu-item" id="proj-rename"><svg class="ico" aria-hidden="true"><use href="#i-pencil"/></svg>Rename project</button>
+          <button type="button" class="menu-item" id="proj-backup" title="Download the whole project (all pages) as one file"><svg class="ico" aria-hidden="true"><use href="#i-export"/></svg>Back up project</button>
+          <label class="menu-item" title="Restore a project backup file"><svg class="ico" aria-hidden="true"><use href="#i-import"/></svg>Import backup<input type="file" id="proj-import" accept=".json,application/json" class="visually-hidden"></label>
+          <hr>
+          <button type="button" class="menu-item danger" id="proj-delete"><svg class="ico" aria-hidden="true"><use href="#i-trash"/></svg>Delete project…</button>
+        </div>
+      </div>
+      <div class="topbar-tools">
+        <button type="button" class="btn sm" id="display-btn" popovertarget="display-menu" aria-label="Display settings: theme and density"><svg class="ico" aria-hidden="true"><use href="#i-sliders"/></svg>Display</button>
+        <div id="display-menu" popover class="menu" aria-label="Display settings">
+          <fieldset class="menu-group"><legend>Theme</legend>
+            <div class="seg" role="radiogroup" aria-label="Theme">
+              <label><input type="radio" name="scheme" value="system" checked>System</label>
+              <label><input type="radio" name="scheme" value="light">Light</label>
+              <label><input type="radio" name="scheme" value="dark">Dark</label>
+            </div>
+            <p class="menu-hint" id="scheme-now"></p>
+          </fieldset>
+          <fieldset class="menu-group"><legend>Density</legend>
+            <div class="seg" role="radiogroup" aria-label="Density">
+              <label><input type="radio" name="density" value="comfortable" checked>Comfortable</label>
+              <label><input type="radio" name="density" value="compact">Compact</label>
+            </div>
+          </fieldset>
+        </div>
       </div>
     </div>
   </header>
@@ -39,8 +100,12 @@
     <!-- ============ SIDEBAR ============ -->
     <aside class="sidebar" aria-label="Pages in this project">
       <div class="side-inner">
-        <button type="button" class="btn primary block" id="side-add">+ Add page</button>
-        <button type="button" class="side-item side-all" id="side-all" aria-current="false">
+        <div class="side-top">
+          <button type="button" class="btn primary" id="side-add" title="Add a page"><svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg><span class="lbl">Add page</span></button>
+          <button type="button" class="btn icon side-toggle" id="side-toggle" aria-expanded="true" aria-controls="page-list" aria-label="Collapse pages sidebar" title="Collapse sidebar"><svg class="ico" aria-hidden="true"><use href="#i-chev-left"/></svg></button>
+        </div>
+        <button type="button" class="side-item side-all" id="side-all" aria-current="false" title="All pages · compare">
+          <svg class="ico" aria-hidden="true"><use href="#i-layers"/></svg>
           <span class="si-title">All pages · compare</span>
           <span class="si-sub">Comparison, duplicates, similarity, link map</span>
         </button>
@@ -52,12 +117,23 @@
       </div>
     </aside>
 
-    <main class="main-col">
+    <main class="main-col" id="main" tabindex="-1">
       <!-- ============ INPUT ============ -->
       <section id="input-section" class="card input-card" aria-labelledby="input-title">
         <div class="input-head">
           <h1 id="input-title">Add a page</h1>
-          <p class="hint">In Chrome: open the page → <b>right-click → Inspect</b> → right-click the <code>&lt;html&gt;</code> tag → <b>Copy → Copy element</b>, then paste here. Add as many pages as you like; each one is saved in this project.</p>
+          <p class="hint">Add as many pages as you like. Each one is analyzed on your computer and saved in this project.</p>
+        </div>
+
+        <ol class="steps">
+          <li><b>Copy the HTML</b>In Chrome: right-click the page → <b>Inspect</b> → right-click the <code>&lt;html&gt;</code> tag → <b>Copy → Copy element</b>.</li>
+          <li><b>Paste it here</b>Paste into the box below and add the page URL. The URL is needed for the internal link map.</li>
+          <li><b>Analyze</b>Press <b>Add &amp; open page</b> (or <code>Ctrl</code> + <code>Enter</code>) to see the full report.</li>
+        </ol>
+
+        <div class="sample-callout">
+          <p><b>New here?</b> <span>Load four fictional sample pages to explore every report and the cross-page tools.</span></p>
+          <button type="button" class="btn sm" data-click="#sample-btn">Load sample pages</button>
         </div>
 
         <div class="input-row">
@@ -76,11 +152,13 @@
         <div class="actions">
           <button type="button" class="btn primary" id="analyze-btn">Add &amp; open page <kbd>Ctrl + Enter</kbd></button>
           <button type="button" class="btn" id="add-next-btn" title="Save this page and clear the form for the next one">Add &amp; paste next <kbd>Ctrl + Shift + Enter</kbd></button>
-          <label class="btn ghost">Open .html file<input type="file" id="file-input" accept=".html,.htm,.txt,text/html" class="visually-hidden"></label>
-          <button type="button" class="btn ghost" id="sample-btn">Load sample pages</button>
-          <button type="button" class="btn ghost" id="clear-btn">Clear</button>
-          <button type="button" class="btn ghost" id="cancel-edit-btn" hidden>Cancel</button>
           <span id="input-size" class="muted small" aria-live="polite"></span>
+          <div class="secondary">
+            <label class="btn ghost sm">Open .html file<input type="file" id="file-input" accept=".html,.htm,.txt,text/html" class="visually-hidden"></label>
+            <button type="button" class="btn ghost sm" id="sample-btn">Load sample pages</button>
+            <button type="button" class="btn ghost sm" id="clear-btn">Clear</button>
+            <button type="button" class="btn ghost sm" id="cancel-edit-btn" hidden>Cancel</button>
+          </div>
         </div>
         <p id="input-error" class="error-msg" role="alert" hidden></p>
       </section>
@@ -103,18 +181,27 @@
       <!-- ============ PAGE REPORT ============ -->
       <section id="report" hidden>
         <div class="tabs-sticky">
-          <div class="tablist" role="tablist" aria-label="Page report sections" id="tablist">
-            <button type="button" role="tab" id="tab-overview" aria-selected="true" tabindex="0">Overview <span class="tcount" id="tc-overview"></span></button>
-            <button type="button" role="tab" id="tab-meta" aria-selected="false" tabindex="-1">Meta &amp; Head</button>
-            <button type="button" role="tab" id="tab-schema" aria-selected="false" tabindex="-1">Schema <span class="tcount" id="tc-schema"></span></button>
-            <button type="button" role="tab" id="tab-headings" aria-selected="false" tabindex="-1">Headings <span class="tcount" id="tc-headings"></span></button>
-            <button type="button" role="tab" id="tab-content" aria-selected="false" tabindex="-1">Content <span class="tcount" id="tc-content"></span></button>
-            <button type="button" role="tab" id="tab-links" aria-selected="false" tabindex="-1">Links <span class="tcount" id="tc-links"></span></button>
-            <button type="button" role="tab" id="tab-images" aria-selected="false" tabindex="-1">Images <span class="tcount" id="tc-images"></span></button>
-            <button type="button" role="tab" id="tab-keywords" aria-selected="false" tabindex="-1">Keywords</button>
-            <button type="button" role="tab" id="tab-technical" aria-selected="false" tabindex="-1">Technical</button>
-            <button type="button" role="tab" id="tab-aiprompt" aria-selected="false" tabindex="-1">AI prompt</button>
-            <button type="button" role="tab" id="tab-export" aria-selected="false" tabindex="-1">Export</button>
+          <div class="tablist" role="tablist" aria-label="Page report sections" aria-orientation="vertical" id="tablist">
+            <div class="rail-group" role="presentation">
+              <span class="rail-label" aria-hidden="true">Analyze</span>
+              <button type="button" role="tab" id="tab-overview" aria-selected="true" tabindex="0"><svg class="ico" aria-hidden="true"><use href="#i-overview"/></svg><span class="tlabel">Overview</span><span class="tcount" id="tc-overview"></span></button>
+              <button type="button" role="tab" id="tab-meta" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-meta"/></svg><span class="tlabel">Meta &amp; Head</span></button>
+              <button type="button" role="tab" id="tab-headings" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-headings"/></svg><span class="tlabel">Headings</span><span class="tcount" id="tc-headings"></span></button>
+              <button type="button" role="tab" id="tab-content" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-content"/></svg><span class="tlabel">Content</span><span class="tcount" id="tc-content"></span></button>
+              <button type="button" role="tab" id="tab-keywords" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-keywords"/></svg><span class="tlabel">Keywords</span></button>
+            </div>
+            <div class="rail-group" role="presentation">
+              <span class="rail-label" aria-hidden="true">Structure</span>
+              <button type="button" role="tab" id="tab-schema" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-schema"/></svg><span class="tlabel">Schema</span><span class="tcount" id="tc-schema"></span></button>
+              <button type="button" role="tab" id="tab-links" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-links"/></svg><span class="tlabel">Links</span><span class="tcount" id="tc-links"></span></button>
+              <button type="button" role="tab" id="tab-images" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-images"/></svg><span class="tlabel">Images</span><span class="tcount" id="tc-images"></span></button>
+              <button type="button" role="tab" id="tab-technical" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-technical"/></svg><span class="tlabel">Technical</span></button>
+            </div>
+            <div class="rail-group" role="presentation">
+              <span class="rail-label" aria-hidden="true">Output</span>
+              <button type="button" role="tab" id="tab-aiprompt" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-aiprompt"/></svg><span class="tlabel">AI prompt</span></button>
+              <button type="button" role="tab" id="tab-export" aria-selected="false" tabindex="-1"><svg class="ico" aria-hidden="true"><use href="#i-export"/></svg><span class="tlabel">Export</span></button>
+            </div>
           </div>
         </div>
         <div class="panels">

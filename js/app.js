@@ -142,6 +142,8 @@
       let n = null;
       if (e.key === 'ArrowRight') n = (i + 1) % tabs.length;
       else if (e.key === 'ArrowLeft') n = (i - 1 + tabs.length) % tabs.length;
+      else if (e.key === 'ArrowDown') n = (i + 1) % tabs.length; // vertical report rail
+      else if (e.key === 'ArrowUp') n = (i - 1 + tabs.length) % tabs.length;
       else if (e.key === 'Home') n = 0;
       else if (e.key === 'End') n = tabs.length - 1;
       if (n !== null) { e.preventDefault(); select(tabs[n]); }
