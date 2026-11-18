@@ -92,7 +92,7 @@ You can also drop or open a saved `.html` file. Entering the page URL is optiona
 
 ## Screenshots
 
-All screenshots use the built-in fictional sample pages.
+All screenshots show fictional English-language pages for an imaginary moving company. No real site or data is shown.
 
 <table>
   <tr>
@@ -211,6 +211,7 @@ node golden.mjs --root .. --label current
 node compare.mjs golden/baseline out/current
 
 # Regenerate the README screenshots (writes to docs/screenshots/)
+# The pages it uses are defined in tests/readme-samples.mjs
 node readme-shots.mjs
 ```
 

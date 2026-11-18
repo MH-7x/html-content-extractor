@@ -4,6 +4,7 @@ import { chromium } from 'playwright-core';
 import fs from 'node:fs';
 import path from 'node:path';
 import { pathToFileURL, fileURLToPath } from 'node:url';
+import { EN_PAGES } from './readme-samples.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
@@ -22,7 +23,14 @@ async function open(scheme, density = 'comfortable') {
 }
 const settle = async (page) => { await page.waitForFunction(() => !document.getElementById('toast').classList.contains('show'), null, { timeout: 8000 }); await page.waitForTimeout(500); };
 const shot = async (page, name, opts = {}) => { await settle(page); await page.screenshot({ path: path.join(out, name + '.png'), ...opts }); };
-const loadSamples = async (page) => { await page.locator('#sample-btn').click(); await page.waitForSelector('#bulk:not([hidden])'); };
+// English-only pages (the built-in samples are Arabic), added through the normal UI
+const loadSamples = async (page) => {
+  for (const p of EN_PAGES) {
+    await page.fill('#page-url', p.url); await page.fill('#html-input', p.html);
+    await page.locator('#add-next-btn').click(); await page.waitForTimeout(250);
+  }
+  await page.locator('#side-all').click(); await page.waitForSelector('#bulk:not([hidden])');
+};
 const openPage = async (page, n) => { await page.locator('#page-list [data-page]').nth(n).click(); await page.waitForSelector('#report:not([hidden])'); };
 
 let page = await open('light');
